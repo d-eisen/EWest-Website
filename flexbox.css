@@ -1,0 +1,112 @@
+/* ================================= 
+ Navigation
+==================================== */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Merriweather', serif
+}
+
+
+/*Trying to get the logo on the left*/
+#top_logo {
+  align-self: flex-start;
+}
+
+
+/* ================================= 
+  Card Styles
+==================================== */
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  color: fff;
+}
+
+/*
+.row {
+	flex: 1;
+}
+*/
+
+.card {
+  flex:none;
+  width: 40rem;
+    
+}
+
+.card-body{
+  font: fff;
+  background-color: rgb(37, 146, 190);
+  padding: 1em;
+  }
+
+.card-title {
+  
+}
+
+.card-subtitle {
+  
+}
+
+.card-text {
+  
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+/*
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+*/
+	.main-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card {
+    flex:none;
+    width: 80rem;
+  }
+    
+  }
+
+@media (min-width: 1025px) {
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    min-height: 100vh;
+	}
+  
+  .card {
+    flex:none;
+    width: 40rem;
+  }
+
+}
