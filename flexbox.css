@@ -30,7 +30,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 100vh;
+/*  min-height: 100vh;*/
   color: fff;
 }
 
@@ -53,8 +53,8 @@ nav {
   }
 
 .card-title {
-  
-}
+  font: white;
+  }
 
 .card-subtitle {
   
