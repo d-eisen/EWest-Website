@@ -1,12 +1,4 @@
 
-/*Deprecated Feature*/
-
-/*
-.nav nav-pills {
-  background-color: aqua;
-}
-*/
-
 .nav>li>a {
     position: relative;
     display: block;
@@ -15,9 +7,6 @@
     text-decoration: 
 }
     
-
-
-
 .main-header {
   font-family: 'Merriweather', serif;
   padding-top: 7%;
