@@ -10,6 +10,7 @@ nav {
 
 .nav {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-end;
   font-family: 'Merriweather', serif
@@ -17,9 +18,11 @@ nav {
 
 
 /*Trying to get the logo on the left*/
-#top_logo {
+.top_logo {
+  display: flex;
   align-self: flex-start;
-  
+  height: 5rem;
+  padding: 0;
 }
 
 

@@ -25,21 +25,21 @@
 
 body { font-family: sans-serif; }
 
-/* ---- grid ---- */
+/* ---- masonry grid ---- */
 
 .grid {
   background: #EEE;
   max-width: 1200px;
 }
 
-/* clearfix */
+/* masonry clearfix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* ---- grid-item ---- */
+/* ---- masonry grid-item ---- */
 
 .grid-item {
   width: 160px;
