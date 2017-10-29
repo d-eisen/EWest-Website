@@ -29,7 +29,7 @@ Card Column Styles
 ==================================== */
 .card-columns {
   display: inline-block;
-  column-break-inside: avoid;
+  -column-break-inside: avoid;
 }
 
 
@@ -38,14 +38,16 @@ Card Column Styles
 /* ================================= 
   Flexbox Card Styles 
 ==================================== */
+/*
 
 .card-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-/*  min-height: 100vh;*/
+  min-height: 100vh;
   color: fff;
 }
+*/
 
 /*
 .row {
@@ -53,18 +55,23 @@ Card Column Styles
 }
 */
 
+/*
 .card {
   flex:none;
   width: 40rem;
     
+*/
 }
 
+/*
 .card-body{
   font: fff;
   background-color: rgb(37, 146, 190);
   padding: 1em;
   }
+*/
 
+/*
 .card-title {
   font: white;
   }
@@ -74,6 +81,7 @@ Card Column Styles
 }
 
 .card-text {
+*/
   
 }
 /* ================================= 
@@ -82,31 +90,38 @@ Card Column Styles
 
 /*Flexbox Cards Media Query*/
 
-@media (min-width: 769px) {
-
+/*@media (min-width: 769px) {*/
 /*
+
 	.main-header,
 	.main-nav {
 		display: flex;
-	}
 */
+/*
+	}
 	.main-header {
 		flex-direction: column;
 		align-items: flex-start;
 	}
+*/
 
+/*
   .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+*/
+/*
   
   .card {
     flex:none;
     width: 80rem;
   }
+*/
   }
 
+/*
 @media (min-width: 1025px) {
   .card-content {
     display: flex;
@@ -115,11 +130,14 @@ Card Column Styles
     justify-content: space-between;
     
     min-height: 100vh;
+*/
+/*
 	}
   
   .card {
     flex:none;
     width: 40rem;
+*/
   }
 
 }
