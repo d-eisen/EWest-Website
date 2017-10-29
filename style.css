@@ -1,4 +1,4 @@
-
+/*Nav Styling*/
 .nav>li>a {
     position: relative;
     display: block;
@@ -7,13 +7,15 @@
     text-decoration: 
 }
     
+
+/*Header Styling*/
 .main-header {
   font-family: 'PhillySans-Regular';
   padding-top: 7%;
   padding-left: 7%;
   font-size: 5em;
   font-style: oblique;
-  height: 1000px;
+  height: 750px;
 
   background: #ffffff url('img/young man.jpg') no-repeat 33%;
   background-size: cover;

@@ -17,17 +17,26 @@ nav {
 }
 
 
-/*Trying to get the logo on the left*/
+/*Display logo on the left*/
 .top_logo {
   display: flex;
   align-self: flex-start;
   height: 5rem;
   padding: 0;
 }
+/* ================================= 
+Card Column Styles 
+==================================== */
+.card-columns {
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+
 
 
 /* ================================= 
-  Card Styles
+  Flexbox Card Styles 
 ==================================== */
 
 .card-content {
@@ -71,6 +80,7 @@ nav {
   Media Queries
 ==================================== */
 
+/*Flexbox Cards Media Query*/
 
 @media (min-width: 769px) {
 
@@ -95,7 +105,6 @@ nav {
     flex:none;
     width: 80rem;
   }
-    
   }
 
 @media (min-width: 1025px) {
@@ -113,4 +122,14 @@ nav {
     width: 40rem;
   }
 
+}
+
+/*Card Column Media Queries*/
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
 }

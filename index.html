@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     
 <!--     Latest compiled and minified CSS from Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
 
 <!--     Latest compiled and minified JavaScript from Bootstrap-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-<!--    Do I still need this viewport tag?-->
+<!--    May not still need this viewport tag-->
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     
     <link rel="stylesheet" href="flexbox.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
+    <link src="img/PhillySans-Regular.otf" rel="stylesheet">
   
   </head>
   
@@ -57,8 +59,130 @@
 <!-- Experimenting with adding a down arrow      
 <img class="arrow" src="img/arrow.svg" alt="Down arrow">-->
     </header>
-  
+
+    
     <main>
+<!--Card Column Style-->
+      <section class="card-columns">
+        <div class="card-columns">
+  <div class="card">
+    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title that wraps to a new line</h4>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="card-block card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card card-inverse card-primary p-3 text-center">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer>
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img img-fluid" src="..." alt="Card image">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+        
+<!--Card Content in straight HTML -- minimum styling
+
+        <div class="card">
+          <div class="card-body">
+              <h4 class="card-title">About Us</h4>
+              <h6 class="card-subtitle">Card subtitle</h6>
+              <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.</p>
+              <a href="#" class="card-link">Card Link</a>
+              <a href="#" class="card-link">Another Link</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Mission</h4>
+            <p class="card-text">Empower West will:</p>
+          </div>
+          <ol class="list-group list-group-flush">
+            <li class="list-group-item">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</li>
+            <li class="list-group-item">Help change the hearts of people in and outside of West Louisville so that people will see the importance of West Louisville and her people in all parts of Greater Louisville.</li>
+            <li class="list-group-item">Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
+            <li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
+            <li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive way.</li>
+          </ol>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+              <h4 class="card-title">Mindset</h4>
+              <h6 class="card-subtitle">Card subtitle</h6>
+              <p class="card-text">Based on our shared Christian orientation, EmpowerWest,will stand with those most easily ignored in business dealings because they have neither voice nor place at the bargaining table, and yet their lives are most affected by potential business decisions.</p>
+              <a href="#" class="card-link">Card Link</a>
+              <a href="#" class="card-link">Another Link</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+              <h4 class="card-title">Makeup</h4>
+              <h6 class="card-subtitle">Card subtitle</h6>
+              <p class="card-text">A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville’s current residents and secondarily for the profit-making of investors.</p>
+              <a href="#" class="card-link">Card Link</a>
+              <a href="#" class="card-link">Another Link</a>
+          </div>
+        </div>
+-->
+      </section>
+      
+<!--Card Flexbox Style-->
       <section class="card-content">
         <div class="card">
           <div class="card-body">
@@ -111,17 +235,31 @@
       </section>
         
 <!--  Masonry Style Cards-->
-<div class="grid">
-      <div class="grid-item"></div>
+    <div class="grid">
+        <div class="grid-item">
+          <h4 class="card-title">Card title</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+    </div>
       <div class="grid-item grid-item--width2 grid-item--height2">
       </div>
-      <div class="grid-item grid-item--height3"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width3"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width2 grid-item--height3"></div>
+      <div class="grid-item grid-item--height3">
+      </div>
+      <div class="grid-item grid-item--height2">
+  
+      </div>
+      <div class="grid-item grid-item--width3">
+      </div>
+      <div class="grid-item">
+      </div>
+      <div class="grid-item">
+      </div>
+      <div class="grid-item grid-item--height2">
+      </div>
+      <div class="grid-item grid-item--width2 grid-item--height3">
+      </div>
       <div class="grid-item"></div>
       <div class="grid-item grid-item--height2"></div>
       <div class="grid-item"></div>
@@ -192,3 +330,69 @@
   </body>
 </html>
 
+<section>
+<div class="card-columns">
+  <div class="card">
+    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title that wraps to a new line</h4>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="card-block card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top img-fluid" src="..." alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card card-inverse card-primary p-3 text-center">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer>
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img img-fluid" src="..." alt="Card image">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</section>
