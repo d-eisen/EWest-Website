@@ -24,8 +24,30 @@
 /*Card Column Style*/
 .card-columns {
   background-color: #2592beb3;
+}
+
+.card {
   
 }
+
+.card-block{
+    
+}
+
+.card-title {
+  
+}
+
+
+.card-text {
+  
+}
+
+.list-group-item {
+  
+}
+
+
 
 .title {
   max-width: 200px;
