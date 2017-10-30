@@ -1,4 +1,13 @@
+/*Font*/
+
+@font-face {
+  font-family: 'PhillySans-Regular';
+  src: url("img/PhillySans-Regular.otf") format("opentype");
+}
+
 /*Nav Styling*/
+
+
 .nav>li>a {  
   position: relative;
     display: block;
