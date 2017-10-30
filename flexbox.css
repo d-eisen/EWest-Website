@@ -13,7 +13,7 @@ nav {
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
-  font-family: 'Merriweather', serif
+  font-family: 'Merriweather', sans-serif;
 }
 
 
@@ -21,7 +21,7 @@ nav {
 .top_logo {
   display: flex;
   align-self: flex-start;
-  height: 5rem;
+  height: 4rem;
   padding: 0;
 }
 /* ================================= 
@@ -29,8 +29,8 @@ Card Column Styles
 ==================================== */
 .card-columns {
   display: inline-block;
-  -column-break-inside: avoid;
 }
+
 
 
 
@@ -90,31 +90,48 @@ Card Column Styles
 
 /*Flexbox Cards Media Query*/
 
-/*@media (min-width: 769px) {*/
-/*
+@media min-width: 675px) {
 
+/*
 	.main-header,
 	.main-nav {
 		display: flex;
-*/
-/*
 	}
+  
 	.main-header {
-		flex-direction: column;
-		align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
 	}
-*/
 
-/*
-  .card-content {
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    justify-content: flex-end;
+      font-family: 'Merriweather', sans-serif;
+      }
+*/
+  
+  .title {
+    background-color: blue;
+    font-size: 100rem;
+  }
+    
+}
+
+/*.card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 */
-/*
-  
-  .card {
+/*.card {
     flex:none;
     width: 80rem;
   }

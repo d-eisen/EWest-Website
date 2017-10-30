@@ -1,6 +1,6 @@
 /*Nav Styling*/
-.nav>li>a {
-    position: relative;
+.nav>li>a {  
+  position: relative;
     display: block;
     padding: 8px 15px;
     color: #3c3c3c;
@@ -15,7 +15,7 @@
   padding-left: 5%;
   font-size: 5em;
   font-style: oblique;
-  height: 700px;
+  height: 800px;
 
   background: #ffffff url('img/young man.jpg') no-repeat 33%;
   background-size: cover;
