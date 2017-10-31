@@ -29,6 +29,8 @@ Card Column Styles
 ==================================== */
 .card-columns {
   display: inline-block;
+  
+  
 }
 
 
@@ -88,9 +90,21 @@ Card Column Styles
   Media Queries
 ==================================== */
 
-/*Flexbox Cards Media Query*/
+@media min-width: 350px {
+  .main-header {
+    background: #ffffff url('img/youngManMobile.jpg') no-repeat 100%;
+    font-family: 'PhillySans-Regular';
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-bottom: 0;
+    font-size: 1em;
+    font-style: oblique;
+    height: 100%;
+    width: 100%;
+  }
+  }
 
-@media min-width: 675px) {
+
 
 /*
 	.main-header,
@@ -119,8 +133,10 @@ Card Column Styles
 */
   
   .title {
+/*
     background-color: blue;
     font-size: 100rem;
+*/
   }
     
 }
@@ -160,6 +176,7 @@ Card Column Styles
 }
 
 /*Card Column Media Queries*/
+/*
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
@@ -167,4 +184,4 @@ Card Column Styles
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
-}
+}*/

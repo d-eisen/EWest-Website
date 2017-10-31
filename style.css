@@ -22,41 +22,69 @@
   font-family: 'PhillySans-Regular';
   padding-top: 2%;
   padding-left: 5%;
-  font-size: 5em;
+  font-size: 3em;
   font-style: oblique;
   height: 800px;
+  width: 100%;
 
-  background: #ffffff url('img/young man.jpg') no-repeat 33%;
+  background: #ffffff url('img/young man.jpg') no-repeat 50%;
   background-size: cover;
 }
 
 /*Card Column Style*/
 .card-columns {
   background-color: #2592beb3;
+  padding: 3%
 }
 
 .card {
-  
+  padding: 3%
 }
 
 .card-block{
-    
+  padding: 3%
 }
 
 .card-title {
-  
+  padding: 1%;
+  font-weight: 800;
 }
 
 
 .card-text {
+  font-weight 100;
   
+}
+
+.small.text-muted {
+  color: #ffffff;
 }
 
 .list-group-item {
   
 }
 
+/*  About us Card column*/
+#about {
+  background-color: rgba(255, 200, 87, 1); 
+}
 
+#mission {
+    background-color: rgba(242, 22, 40, 1); 
+}
+
+.list-group li{
+    background-color: rgba(242, 22, 40, 1); 
+  
+}
+
+#mindset {
+    background-color: rgba(197, 255, 253, 1);
+}
+
+#makeup {
+    background-color: rgba(37, 146, 189, 1);
+}
 
 .title {
   max-width: 200px;
