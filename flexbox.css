@@ -27,14 +27,25 @@ nav {
 /* ================================= 
 Card Column Styles 
 ==================================== */
+/*
 .card-columns {
   display: inline-block;
+*/
   
   
 }
 
-
-
+/* ================================= 
+  About Card Styles 
+==================================== */
+/*
+.about-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  }*/
 
 
 /* ================================= 
@@ -103,6 +114,13 @@ Card Column Styles
     width: 100%;
   }
   }
+
+@media min-width: 768px {
+  .card-column {
+    column-count: 3;
+  }
+  }
+
 
 
 
