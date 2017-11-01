@@ -20,33 +20,50 @@
   
   
   <body>
-    <nav class="navigation" id="navigation">
+    <nav class="navigation" "topnav" id="myTopNav">
     
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#top">
-          <img class="top_logo" src="img/EWLlogo.jpg"/>
-          </a>
-        </li>
-      </ul>
-      
-      <ul class="nav">
-<!--Repeated logo item-->
-        <!--
-        <li class="nav-item" id="top_logo" src="img/EWLlogo.jpg">
-        </li>
+<!--
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#top">
+            <img class="top_logo" src="img/EWLlogo.jpg"/>
+            </a>
+          </li>
+        </ul>
+    
 -->
-        <li class="nav-item">
-          <a class="nav-link active" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#news">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+<!--
+        <ul class="nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+-->
+      
+      <div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     </nav>
+    
+<!--    <div class="topnav" id="myTopnav">-->
+
+  
+<!--</div>-->
+    
+    
+    
+    
     
     
     
@@ -227,7 +244,16 @@
     
     <footer>
     </footer>
-    
+    <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
   </body>
 </html>
 
