@@ -1,11 +1,11 @@
-/*Font Styling*/
+/*Header Font Styling*/
 
 @font-face {
   font-family: 'PhillySans-Regular';
   src: url("img/PhillySans-Regular.otf") format("opentype");
 }
 
-/*FINAL HAMBURGER NAV STYLING*/
+/* HAMBURGER NAV STYLING*/
 nav {
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: none;
 }
 
 nav ul.opening {
@@ -48,10 +47,10 @@ nav a:hover, nav a:focus { background: #E4B363; }
   color: rgba(255,255,255,.4);
 }
 
-/*FINAL MENU TOGGLE STYLES*/
+/* MENU TOGGLE STYLES*/
 
 .menu-toggle {
-  position: absolute;
+/*  position: absolute;*/
   padding: 0.8em;
   top: 1em;
   right: .5em;
@@ -91,9 +90,9 @@ nav a:hover, nav a:focus { background: #E4B363; }
   transform: translateY(-1px) rotate(-90deg);
 }
 
-/*FINAL HAMBURGER STYLING FOR DESKTOP*/
+/* HAMBURGER STYLING FOR DESKTOP*/
 .menu-toggle {
-  position: absolute;
+/*  position: absolute;*/
   padding: 0.8em;
   top: 1em;
   right: .5em;
@@ -134,56 +133,14 @@ nav a:hover, nav a:focus { background: #E4B363; }
 }
 
 
-/*OLD Nav Styling*/
-
-
-/*
-.nav>li>a {  
-  position: relative;
-    display: block;
-    padding: 8px 15px;
-    color: #3c3c3c;
-    text-decoration: none;     
-*/
-/*}*/
-    
-
-/*Resonsive Navigation Styling*/
-/* Add a black background color to the top navigation */
-/*
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+nav ul {
+  display: none;
 }
-*/
 
-/* Style the links inside the navigation bar */
-/*
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-*/
-/*}*/
+nav ul.open {
+  display: flex
+} 
 
-/*
- Change the color of links on hover 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-*/
-/*}*/
-/*
-
- Hide the link that should open and close the topnav on small screens 
-.topnav .icon {
-    display: none;
-*/
-/*}*/
 
 
 
@@ -202,9 +159,8 @@ nav a:hover, nav a:focus { background: #E4B363; }
   line-height: 90%;
     font-size: 4em;
   font-style: oblique;
-  
-  
 }
+
 /*Card Column Style*/
 /*
 .card-columns {
@@ -236,11 +192,9 @@ nav a:hover, nav a:focus { background: #E4B363; }
 /*  border: 1px solid rgba(0,0,0,.125);*/
 /*  border-radius: .25rem;*/
 }
-}
 
 .card-block{
   padding: 3%;
-  
 }
 
 .card-title {
@@ -263,7 +217,7 @@ nav a:hover, nav a:focus { background: #E4B363; }
   
 }
 
-/*  About us Card column*/
+/* Card Styling for Individual Cards*/
 #about {
   background-color: rgba(255, 200, 87, 1); 
 }

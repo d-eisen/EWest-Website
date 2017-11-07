@@ -19,10 +19,12 @@
 
 
 //JQUERY SCRIPT FOR HAMBURGER
+//console.log('Hello')
+//console.log($(".menu-toggle"))
 
-$('.menu-toggle').click(function() {
+$('.menu-toggle').on("click", function() {
+  console.log("CLICK")
 
-  $('ul').toggleClass('opening');
-  $(this).toggleClass('open');
+  $('nav ul').toggleClass('open');
 
 })

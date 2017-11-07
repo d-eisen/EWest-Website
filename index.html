@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     
 <!--     Latest compiled and minified CSS from Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -13,14 +13,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+      <!--JS HAMBURGER JS-->
+    
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flexbox.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
   
-  <!--FINAL JS HAMBURGER JS-->
-  <script src="//code.jquery.com/jquery.min.js"></script>
+
   
   <body>
 <!-- PREVIOUS NAV VERSION    
@@ -71,12 +72,12 @@
   </div>
  <!-- THIS IS THE LOGO IMAGE GRAPHIC
   <img class="top_logo" src="img/EWLlogo.jpg"/>-->
-  <ul class="open desktop">
-<!--    <li><a href="#!">Home</a></li>-->
-    <li><a href="#!">Latest News</a></li>
-    <li><a href="#!">About us</a></li>
-<!--    <li><a href="#!">Download Plugin</a></li>-->
-    <li><a href="#!">Contact us</a></li>
+  <ul>
+<!--    <li><a href="#home">Home</a></li>-->
+    <li><a href="#news">News</a></li>
+    <li><a href="#about">About us</a></li>
+<!--    <li><a href="#!">Download</a></li>-->
+    <li><a href="#contact">Contact us</a></li>
     
   </ul>
 </nav>
@@ -85,9 +86,7 @@
     
     
 <!--    <div class="topnav" id="myTopnav">-->
-
-  
-<!--</div>-->
+<!--    </div>-->
     
     
     
@@ -101,7 +100,9 @@
 
     
     <main>
-<!--Card Column-->      
+<!--BOOTSTRAP Cards Containing Organization Information-->      
+<!--Card "About Us" -->      
+
       <section class="About-Cards">
         <div class="card-columns">
           <div class="card col-sm" id="about">
@@ -111,17 +112,11 @@
   <!--            <p class="card-text"><small class="text-muted">Read More</small></p>-->
             </div>
           </div>
+          
   <!-- Force next columns to break to new line -->
           <div class="w-100"></div>
-  <!--
-          <div class="card bg-light mb-3" style="max-width: 20rem;">
-            <div class="card-header">About Us</div>
-            <div class="card-body">
-              <h4 class="card-title">Our Purpose</h4>
-              <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.</p>
-            </div>
-          </div>
-  -->
+  
+<!--  Card "Mission" including Undordered List-->
           <div class="card col-sm" id="mission">
             <div class="card-block">
               <h4 class="card-title">Our Mission</h4>
@@ -133,9 +128,10 @@
                     <li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
                     <li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive way.</li>
                   </ol>
-  <!--            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             </div>
           </div>
+
+<!--  Card "Mindset" -->
 
           <div class="card col-sm" id="mindset">
             <div class="card-block">
@@ -145,6 +141,7 @@
             </div>
           </div>
 
+<!--  Card "Makeup" -->
           <div class="card col-sm" id="makeup">
             <div class="card-block">
               <h4 class="card-title">Our Makeup</h4>
@@ -155,6 +152,7 @@
         </div>
       </section>
 
+<!--Card Section "News" -->
       <section class="News_section" id="news">
 
       </section>
@@ -174,118 +172,14 @@
       </section>
 
 
-  <!--Card Flexbox Style-->
-  <!--
-        <section class="card-content">
-          <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">About Us</h4>
-                <h6 class="card-subtitle">Card subtitle</h6>
-                <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.</p>
-                <a href="#" class="card-link">Card Link</a>
-                <a href="#" class="card-link">Another Link</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Mission</h4>
-              <p class="card-text">Empower West will:</p>
-            </div>
-            <ol class="list-group list-group-flush">
-              <li class="list-group-item">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</li>
-              <li class="list-group-item">Help change the hearts of people in and outside of West Louisville so that people will see the importance of West Louisville and her people in all parts of Greater Louisville.</li>
-              <li class="list-group-item">Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
-              <li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
-              <li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive way.</li>
-            </ol>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Mindset</h4>
-                <h6 class="card-subtitle">Card subtitle</h6>
-                <p class="card-text">Based on our shared Christian orientation, EmpowerWest,will stand with those most easily ignored in business dealings because they have neither voice nor place at the bargaining table, and yet their lives are most affected by potential business decisions.</p>
-                <a href="#" class="card-link">Card Link</a>
-                <a href="#" class="card-link">Another Link</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Makeup</h4>
-                <h6 class="card-subtitle">Card subtitle</h6>
-                <p class="card-text">A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville’s current residents and secondarily for the profit-making of investors.</p>
-                <a href="#" class="card-link">Card Link</a>
-                <a href="#" class="card-link">Another Link</a>
-            </div>
-          </div>
-        </section>
-  -->
-
-
-
-  <!--Card content as inline HTML-->
-  <!--
-          <section>
-            <h1>About Us</h1>
-              <p>EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.
-            </p>
-          </section>
-
-          <section>
-            <h1>Mission</h1>
-                <ol>
-                  <h2>EmpowerWest will:</h2>
-                      <li>Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</li>
-                      <li>Help change the hearts of people in and outside of West Louisville so that people will see the importance of West Louisville and her people in all parts of Greater Louisville.</li>
-                      <li>Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
-                      <li>Build bridges of reconciliation between our churches and among our members.</li>
-                      <li>Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive way.</li>
-                </ol>
-          </section>
-
-
-          <section class="flow-content">
-            <h2>Mindset</h2>
-              <ul>
-                  <li>
-                    Based on our shared Christian orientation, EmpowerWest,will stand with those most easily ignored in business dealings because they have neither voice nor place at the bargaining table, and yet their lives are most affected by potential business decisions.
-                  </li>
-              </ul>
-          </section>
-          <section>
-            <h2>Makeup</h2>
-              <ul>
-                  <li>A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville’s current residents and secondarily for the profit-making of investors.
-                </li>
-              </ul>
-          </section>
-  -->
-
     </main>
     
     <footer>
       
     </footer>
-<!--
-OLD VERSION OF HAMBURGER JAVASCRIPT
-    <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
--->
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 
 
 
