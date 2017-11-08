@@ -8,6 +8,7 @@
 $('.menu-toggle').on("click", function() {
 //  console.log("CLICK")
 
-  $('nav ul').toggleClass('open');
+  $('ul').toggleClass('opening');
+  $(this).toggleClass('open');
 
 })
