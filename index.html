@@ -1,122 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--  Site for Head-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     
-<!--     Latest compiled and minified CSS from Bootstrap-->
+<!--     Bootstrap: Latest compiled and minified CSS from Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 
-<!--     Latest compiled and minified JavaScript from Bootstrap-->
+<!--     Bootstrap: Latest compiled and minified JavaScript from Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-      <!--JS HAMBURGER JS-->
     
-    
+<!--    Style Sheets and Fonts-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flexbox.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
   </head>
+   
   
-
-  
+<!--  Site Body-->
   <body>
-<!-- PREVIOUS NAV VERSION    
-<nav class="staticNav" id="staticNav">-->
-<!--
 
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#top">
--->
-<!--
-            </a>
-          </li>
-        </ul>
-    
--->
-<!--
-        <ul class="nav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-          <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#news">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
--->
-    
-<!--
-      <div class="topnav" id="myTopnav" >
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<!--  Site Nav with Hamburger-->
+    <nav class="site-nav">
+
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
       </div>
--->
-      
- 
+     <!-- LOGO IMAGE GRAPHIC
+      <img class="top_logo" src="img/EWLlogo.jpg"/>-->
+      <ul>
+    <!--    <li><a href="#home">Home</a></li>-->
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About us</a></li>
+    <!--    <li><a href="#!">Download</a></li>-->
+        <li><a href="#contact">Contact us</a></li>
 
-<nav class="site-nav">
-
-  <div class="menu-toggle">
-    <div class="hamburger"></div>
-  </div>
- <!-- THIS IS THE LOGO IMAGE GRAPHIC
-  <img class="top_logo" src="img/EWLlogo.jpg"/>-->
-  <ul>
-<!--    <li><a href="#home">Home</a></li>-->
-    <li><a href="#news">News</a></li>
-    <li><a href="#about">About us</a></li>
-<!--    <li><a href="#!">Download</a></li>-->
-    <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
     
-  </ul>
-</nav>
-      
-
-    
-    
-<!--    <div class="topnav" id="myTopnav">-->
-<!--    </div>-->
-    
-    
-    
-    
-    
-    
-    
+<!--    Site Header-->
     <header id="top" class="main-header">
       <span class="title">Empower West Louisville</span>
     </header>
 
-    
-    <main>
-<!--BOOTSTRAP Cards Containing Organization Information-->      
-<!--Card "About Us" -->      
 
-      <section class="About-Cards">
+    
+    <!--    Main Section of Site-->
+    <main>
+    
+      <!--This section includes Bootstrap Cards Containing Organization Information--> 
+    
+      <section class="About-Cards"> 
+        
+        <!--Card Columns if acitvated can be displayed in a masonry-like layout-->      
         <div class="card-columns">
+          
+          <!--Card-About-->
           <div class="card col-sm" id="about">
             <div class="card-block">
               <h4 class="card-title">About Us</h4>
               <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.</p>
-  <!--            <p class="card-text"><small class="text-muted">Read More</small></p>-->
+              <!--Optional Text   <p class="card-text"><small class="text-muted">Read More</small></p>-->
             </div>
           </div>
           
-  <!-- Force next columns to break to new line -->
+          <!-- Force next columns to break to new line -->
           <div class="w-100"></div>
   
-<!--  Card "Mission" including Undordered List-->
+          <!--  Card "Mission" including Undordered List-->
           <div class="card col-sm" id="mission">
             <div class="card-block">
               <h4 class="card-title">Our Mission</h4>
@@ -131,8 +87,7 @@
             </div>
           </div>
 
-<!--  Card "Mindset" -->
-
+          <!--Card "Mindset" -->
           <div class="card col-sm" id="mindset">
             <div class="card-block">
               <h4 class="card-title">Our Mindset</h4>
@@ -141,12 +96,12 @@
             </div>
           </div>
 
-<!--  Card "Makeup" -->
+          <!--  Card "Makeup" -->
           <div class="card col-sm" id="makeup">
             <div class="card-block">
               <h4 class="card-title">Our Makeup</h4>
                 <p class="card-text">A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville’s current residents and secondarily for the profit-making of investors.</p>
-  <!--            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             </div>
           </div>
         </div>
@@ -156,6 +111,8 @@
       <section class="News_section" id="news">
 
       </section>
+
+<!--Section "Contact"-->
 
       <section class=Contact_form id=contact> 
         <form>
@@ -174,15 +131,14 @@
 
     </main>
     
+<!--  Footer -->
     <footer>
       
     </footer>
     
+<!--JavaScript Tags-->
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="./js/index.js"></script>
-
-
-
 
   </body>
 </html>
