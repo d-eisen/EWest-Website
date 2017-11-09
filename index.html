@@ -109,25 +109,86 @@
 
 <!--Card Section "News" -->
       <section class="News_section" id="news">
+        <span>
+        Latest News
+        </span>
 
       </section>
-
-<!--Section "Contact"-->
-
-      <section class=Contact_form id=contact> 
-        <form>
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name">
+        <div class="card-group">
+          
+          <div class="card">
+<!--            <img class="card-img-top" src="" alt="Card image cap">-->
+              <iframe class="video-cap" width="350" height="315" src="https://www.youtube.com/embed/f5yPybHzzaE?rel=0" frameborder="0" allowfullscreen></iframe>
+            <div class="card-body">
+              <h4 class="card-title">Simmons Hosting First Home Game vs Union College
+              </h4>
+              <p class="card-text">Come cheer on the falcons as they face Union College in their first home game First Home Game November 10th 7:00pm</p>
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name">
+            <div class="card-footer">
+              <small class="text-muted">Last updated 1 day ago</small>
             </div>
           </div>
-        </form>
+          
+  
+          <div class="card">
+            <img class="card-img-top" src="img/West_Lou_Forum.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">West Louisville Forum Adddresses Payday Lending</h4>
+              <p class="card-text">Simmons College of Kentucky Presents the next West Louisville Forum, Wed, Nov. 1, 12N with Atty Stephen Reeves, Cooperative Baptist Fellowship TOPIC "The Evils of Payday Loan: How the Poor is Exploited" Free and Open to the Public.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 days ago</small>
+            </div>
+          </div>
+          
+        
+          <div class="card">
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <iframe class="video-cap" width="350" height="315" src="https://www.youtube.com/embed/rEp2Mf-ZDU4?rel=0" frameborder="0" allowfullscreen></iframe>
+            <div class="card-body">
+              <h4 class="card-title">Angela Project 2017 Recap</h4>
+              <p class="card-text">Baptists from the Cooperative Baptist Fellowship, National Baptist Convention of America International, Inc., and the Progressive National Baptist Convention convened Monday in Louisville, Ky., for a historic gathering focused on racial justice and education hosted by Simmons College of Kentucky @ the Annual Session of the NBCA, Intl. Inc.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 5 days ago</small>
+            </div>
+          </div>
+        
+      </div>
+<!--Section "Contact"-->
+   
+        <section class="contact_form" id="contact">
+	       <title class="signup_title">Sign Up Form</title>
+	         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        </section>
+        <Section>
 
-      </section>
-
+          <form class="signup_form" action="#" method="post">
+              <p class="form-p">
+                <label class="sign-up label" for="username">Username
+                </label>
+                <input id="username" name="username" type="text">
+              </p>
+              <p>
+                <label for="password">Password
+                </label>
+                <input id="password" name="password" type="password">
+                <span>Enter a password longer than 8 characters
+                </span>
+              </p>
+              <p>
+                <label for="confirm_password">Confirm Password
+                </label>
+                <input id="confirm_password" name="confirm_password" type="password">
+                <span class="sign-up span">Please confirm your password
+                </span>
+              </p>
+              <p>
+                <input type="submit" value="SUBMIT" id="submit">
+              </p>
+          </form>
+	 
+      </Section>
 
     </main>
     
@@ -137,6 +198,8 @@
     </footer>
     
 <!--JavaScript Tags-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="./js/index.js"></script>
 
