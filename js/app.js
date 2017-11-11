@@ -2,43 +2,52 @@
 
 //Problem: Hints shown even when form is valid
 //Solution: hide and show them at approprite times
-var $password = $("#password");
-var $confirmPassword = $("#confirm_password");
+var $email = $("#email");
+var $confirmEmail = $("#confirm_email");
 
 //Hide hints
 $("form span").hide();
 
-function isPasswordValid () {
-  return $password.val().length > 8;
+
+
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+  console.log;
 }
 
-function arePasswordsMatching () {
-  return $password.val() === $confirmPassword.val(); 
+function isEmailValid () {
+  return $email.val().length > 8;
+}
+
+function areEmailsMatching () {
+  return $email.val() === $confirmEmail.val(); 
 }
 
 function canSubmit() {
-  return isPasswordValid() && arePasswordsMatching();
+  return isEmailValid() && areEmailsMatching();
 }
 
-function passwordEvent() {
-  //Find out if password is valid
-  if($password.val().length > 8) {
+function emailEvent() {
+  //Find out if email is valid
+  if($email.val().length > 8) {
      //Hide hint if match
-    $password.next().hide();  
+    $email.next().hide();  
   } else {
     //else show hint
-    $password.next().show();
+    $email.next().show();
   }
 }
 
-function confirmPasswordEvent() {
-  //Find out if password and confirmation match
-  if(arePasswordsMatching()) {
+function confirmEmailEvent() {
+  //Find out if email and confirmation match
+  if(areEmmailsMatching()) {
       //Hide hint if match
-    $confirmPassword.next().hide();
+    $confirmEmail.next().hide();
   } else {
       //Else show hint
-    $confirmPassword.next().show();
+    $confirmEmail.next().show();
   }
 }
 
@@ -46,10 +55,10 @@ function enableSubmitEvent() {
   $("#submit").prop("disabled", !canSubmit ())
 }
 
-//When event happens on password input
-$password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+//When event happens on email input
+$email.focus(emailEvent).keyup(emailEvent).keyup(confirmEmailEvent).keyup(enableSubmitEvent);
    
 //When event happens on confirmation input
-$confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+$confirmEmail.focus(confirmEmailEvent).keyup(confirmEmailEvent).keyup(enableSubmitEvent);
 
  enableSubmitEvent();
