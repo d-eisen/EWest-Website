@@ -55,6 +55,14 @@ Hamburger Nav Styles
       color: rgba(0, 255, 177, 0.53);
     }
 
+/*Display Logo at top right*/
+.top_logo {
+  display: flex;
+  align-self: flex-end;
+  height: 2rem;
+  padding: 0;
+}
+
 /* MENU TOGGLE STYLES*/
 
 .menu-toggle {
