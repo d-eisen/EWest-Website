@@ -263,5 +263,70 @@
   -->
 
 
+<!DOCTYPE html>
+<html>
+<!--EMAIL FORM WITH REGEX-->
+  
+  
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Winchell Associates</title>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    </head>
+        <body>
+            <section class="sides">
+            <header>
+                <a href="index.html" id="logo"><img src="img/logosmall.png" alt="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html" class="selected">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="contactheader">Contact Us!</h2>
+            <div id="map_canvas"></div>
 
+            <form class="signup_form" action="#" method="post">
+                <h1>Contact Form 
+                    <h2>Please fill all the texts in the fields.</h2>
+                </h1>
+                <p>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                    <span>Please enter a valid Email Address</span>
+                </p>
+                <p>
+                    <label for="confirm_email">Confirm Your Email</label>
+                    <input id="confirm_email" name="confirm_email" type="email">
+                    <span>Please confirm your email address</span>
+                </p>
+                <p>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="SUBMIT" id="submit">
+                </p>   
+            </form>
+            <footer class="footerabout">
+                <a href="http://www.twitter.com/WinchellAssociates"><img src="img/twitter.png" alt="Twitter Logo"></a>
+                <a href="http://www.facebook.com/WinchellAssociates"><img src="img/facebook.png" alt="Facebook Logo"></a>
+                <a href="mailto:bruce@winchellassociates.com"><img src="img/mail.png" alt="Email Logo"></a>
+            </footer>
+            </section>
+            <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="js/app.js"></script>
+        </body>
+</html>
 
