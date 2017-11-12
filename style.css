@@ -23,7 +23,7 @@ Hamburger Nav Styles
       flex-direction: column;
       list-style-type: none;
       padding: 0;
-      margin: 0;
+      margin: 5px;
       display: none;
     }
 
@@ -37,10 +37,11 @@ Hamburger Nav Styles
     nav li:last-child { border-bottom: none; }
 
     nav a {
-      color: #EBEBD3;
+      color: #000;
+      font-weight: 600
       background: #e7a119;
       display: block;
-      padding: 1.5em 4em 1.5em 3em;
+      padding: 1em;
       text-transform: uppercase;
       text-decoration: none;
     }
@@ -55,12 +56,12 @@ Hamburger Nav Styles
       color: rgba(0, 255, 177, 0.53);
     }
 
-/*Display Logo at top right*/
+/*Display Logo at top left*/
 .top_logo {
   display: flex;
-  align-self: flex-end;
-  height: 2rem;
-  padding: 0;
+  align-self: center;
+  height: 3rem;
+  padding-left: 10px;
 }
 
 /* MENU TOGGLE STYLES*/
@@ -171,7 +172,7 @@ Hamburger Nav Styles
     padding: 1.5em 1.3em 1.5em 1.3em;
     margin: 0;
     border: none;
-    background-color: #f04343;
+    background-color: #EBEBD3;
   }
 
   nav a:hover,  nav a:focus { background-color: rgba(255,255,255,.10); }
@@ -187,7 +188,7 @@ Hamburger Nav Styles
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    background-color: #f04343;
+    background-color: #EBEBD3;
   }
   
   
@@ -275,7 +276,7 @@ nav ul {
 
 
 .card-text {
-  font-weight 100;
+  font-weight:400;
   padding-bottom: 5%;
   
 }
@@ -301,11 +302,12 @@ nav ul {
 }
 
 #mission {
-    background-color: rgba(242, 22, 40, 1); 
+    background-color: #f04343;
 }
 
 .list-group li{
-    background-color: rgba(242, 22, 40, 1); 
+    background-color: #f04343;
+; 
   
 }
 
