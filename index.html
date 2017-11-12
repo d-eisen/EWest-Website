@@ -27,12 +27,11 @@
 
 <!--  Site Nav with Hamburger-->
     <nav class="site-nav">
-
       <div class="menu-toggle">
         <div class="hamburger"></div>
       </div>
 <!--      LOGO IMAGE GRAPHIC-->
-      <img class="top_logo" src="img/Logo%20Transparent.003.png"/>
+      <img class="top_logo" src="img/EWLlogo.jpg"/>
       <ul class="open desktop">
     <!--    <li><a href="#home">Home</a></li>-->
         <li><a href="#news">News</a></li>
@@ -69,8 +68,7 @@
             </div>
           </div>
           
-          <!-- Force next columns to break to new line -->
-<!--          <div class="w-100"></div>-->
+        
   
           <!--  Card "Mission" including Undordered List-->
           <div class="card col-sm" id="mission">
@@ -81,12 +79,12 @@
                     <li class="list-group-item">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</li>
 <!--                    <a href="#" class="card-link">Read More</a>-->
                   </ol>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"> Read More</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#missionModal"> Read More</button>
             </div>
           </div>
           
           <!-- Modal -->
-          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal fade" id="missionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -122,6 +120,9 @@
             </div>
           </div>
 
+            <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+          
           <!--  Card "Makeup" -->
           <div class="card col-sm" id="makeup">
             <div class="card-block">
@@ -130,13 +131,59 @@
                 <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
             </div>
           </div>
+          
+          <div class="card col-sm" id="partners">
+            <div class="card-block">
+              <h4 class="card-title">Our Partners</h4>
+<!--              <h6 class="card-subtitle">Our work is supported by a number of local organizations.</h6>-->
+                  <ol class="list-group list-group-flush">
+                    <li class="list-group-item">The work of Empower list is supported by a variety of community partners. See the list of sponsoring organizations.</li>
+<!--                    <a href="#" class="card-link">Read More</a>-->
+                  </ol>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#partnerModal"> Read More</button>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" id="partnerModalHeader">
+                  <h5 class="modal-title" id="ourPartersTitleHeader">Our Partners</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Broadway Baptist Church</li>
+                    <li class="list-group-item">Christ's Church for Our Community</li>
+                    <li class="list-group-item">Crescent Hill Baptist Church</li>
+                    <li class="list-group-item">Highland Baptist Church</li>
+                    <li class="list-group-item">Highland Presbyterian Church</li>
+                    <li class="list-group-item">Kentucky Baptist Fellowship</li>
+                    <li class="list-group-item">Pewee Valley Presbyterian Church</li>
+                    <li class="list-group-item">Ridgewood Baptist Church</li>
+                    <li class="list-group-item">Simmons College of Kentucky</li>
+                    <li class="list-group-item">St. Matthews Episcopal Church</li>
+                    <li class="list-group-item">St. Stephen Church</li>
+                    <li class="list-group-item">Sowers of Justice Network</li>
+                    <li class="list-group-item">Westwood Presbyterian Church</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<!--                  <button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
 <!--Card Section "News" -->
       <section class="News_section" id="news">
         <span>
-        Latest News
         </span>
 
       </section>
