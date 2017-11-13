@@ -2,7 +2,6 @@
 * — Header Styles —
 */
 
-
 @font-face {
   font-family: 'PhillySans-Regular';
   src: url("img/PhillySans-Regular.otf") format("opentype");
@@ -64,7 +63,7 @@ Hamburger Nav Styles
   padding: 5px;
 }
 
-/* HAMBURGER MENU TOGGLE STYLES*/
+/*Hamburger Menu Toggle Styles*/
 
 .menu-toggle {
   position: absolute;
@@ -111,7 +110,7 @@ Hamburger Nav Styles
   margin-top: 1.5em;
 }
 
-/*HAMBURGER NAV MEDIA  QUERIES*/
+/*Hamburger Nav Media Queries*/
 
 @media (min-width: 780px) {
 
@@ -155,16 +154,7 @@ Hamburger Nav Styles
   
   nav ul {
     display: flex;
-  }
-
-nav ul {
-/*  display: none;*/
-}
-
-nav ul.open {
-/*  display: flex*/
-}   
-  
+  }  
 }
 
 
@@ -176,7 +166,7 @@ nav ul.open {
   font-family: 'PhillySans-Regular';
   padding-top: 5%;
   padding-left: 8%;
-  height: 645px;
+  height: 630px;
   width: 100%;
   background: #fff url('img/young man.jpg') no-repeat 50%;
   background-size: cover;
@@ -188,26 +178,24 @@ nav ul.open {
   font-style: oblique;
 }
 
-/*Card Column Style*/
-/*
-.card-columns {
-  background-color: #2592beb3;
-  width: 100%;
-  padding: 3%
-}
-*/
-
-
 
 /*Card Block Style*/
-
-.card-block {
-  
+.card-deck {
+  display: flex
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
   padding: 1%;
   margin-top: 1rem;
+  margin-right: 
+    
+    
+/*    .video-cap {*/
+/*      box-sizing: border-box;*/
+      
+  }
 /*  margin-bottom: 1rem; */
 
 /*  position: relative;*/
@@ -232,11 +220,9 @@ nav ul.open {
   font-weight: 800;
 }
 
-
 .card-text {
   font-weight:400;
   padding-bottom: 5%;
-  
 }
 
 .small.text-muted {
@@ -254,6 +240,7 @@ nav ul.open {
 .card-img-top {
   border-radius: .25em;
 }
+
 /* Card Styling for Individual Cards*/
 #about {
   background-color: rgba(255, 200, 87, 1); 
@@ -263,20 +250,23 @@ nav ul.open {
     background-color: #f04343;
 }
 
-#mission li {
-    background-color: #f04343;
-}
-
-button.btn.btn-primary {
-  margin-top: 1.3em;
-  background-color: rgba(89, 118, 129, 1);
-  border: rgba(89, 118, 129, 1);
-}
+    #mission li {
+        background-color: #f04343;
+    }
 
 
-.modal-header {
-    background-color: rgba(240, 67, 67, 0.9);
-}
+    /*Mission and Partner Card Modal Styling*/
+
+    button.btn.btn-primary {
+      margin-top: 1.3em;
+      background-color: rgba(89, 118, 129, 1);
+      border: rgba(89, 118, 129, 1);
+    }
+
+
+    .modal-header {
+        background-color: rgba(240, 67, 67, 0.9);
+    }
 
 
 #mindset {
@@ -291,13 +281,15 @@ button.btn.btn-primary {
     background-color: rgba(255, 200, 87, 1);
 }
 
-#partners li {
-    background-color: rgba(255, 200, 87, 1); 
+    #partners li {
+        background-color: rgba(255, 200, 87, 1); 
 }
 
-#partnerModalHeader {
-  background-color: rgba(255, 200, 87, .9)
-}
+    /*Partner Card Modal Styling*/
+
+    #partnerModalHeader {
+      background-color: rgba(255, 200, 87, .9)
+    }
 
 .title {
   max-width: 200px;
@@ -306,17 +298,30 @@ button.btn.btn-primary {
 
 /*Sign Up Form*/
 
+.contact-title {
+  font-family: 'PhillySans-Regular';
+  background-color: fff;
+  font-size: 3em;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
 
 .contact_form {
-  background: #384047;
+/*  background: hsla(208, 12%, 25%, 0.77);*/
   font-family: sans-serif;
-  font-size: 10px
+  font-size: 1em
 }
+
+.helptext{
+  font-size: .8em;
+}
+
 .signup_form {
   background: #fff;
-  padding: 4em 4em 2em;
+  padding: 3em 2em 2em 4em;
   max-width: 400px;
-  margin: 100px auto 0;
+  margin: 10px auto 0;
+  margin-top: 2rem;
   box-shadow: 0 0 1em #222;
   border-radius: 5px;
 }
@@ -337,7 +342,7 @@ input {
   outline: none
 }
 input[type="text"],
-input[type="password"] {
+input[type="email"] {
   background: #f5f5f5;
   border: 1px solid #e5e5e5;
   font-size: 1.6em;
@@ -345,7 +350,7 @@ input[type="password"] {
   border-radius: 5px;
 }
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="email"]:focus {
   background: #fff
 }
 .sign-up span {
@@ -376,8 +381,9 @@ span:after {
   margin-top: -8px;
 }
 input[type="submit"] {
-  background: #2F558E;
-  box-shadow: 0 3px 0 0 #1D3C6A;
+/*  background: #2F558E;*/
+  background-color: #597681;
+  box-shadow: 0 3px 0 0 rgb(90, 119, 129);
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -391,3 +397,103 @@ input[type="submit"] {
   text-shadow: 0 1px #68B25B;
 
 }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*  @media (max-width: 575px) {*/
+/*    .staticNav {*/
+/*      display: none;*/
+    }
+/*    .top_logo {*/
+/*     height: 4rem; */
+    }
+/*    .title {*/
+/*      font-size: 4em;*/
+/*    }*/
+/*    .main-header {*/
+/*      padding-top: 8%;*/
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+/*
+  @media (min-width: 576px) and (max-width: 767px) {
+    .staticNav {
+      display: none;
+    }
+    
+  .top_logo {
+     height: 3rem;
+}
+    .title {
+      font-size: 4rem;
+    }
+    .main-header {
+      padding-top: 8%;
+    }
+}
+*/
+
+/*// Medium devices (tablets, 768px and up)*/
+/*
+    @media (min-width: 768px) and (max-width: 991px) {
+      .topnav {
+        display: none;
+      }
+      
+      .top_logo {
+     height: 4rem; 
+}
+      .title {
+      font-size: 5rem;
+    }
+    .main-header {
+      padding-top: 8%;
+    }
+*/
+    /*
+  .card-column {
+    column-count: 3;
+*/  
+/*    }*/
+
+/*// Large devices (desktops, 992px and up)*/
+/*
+  @media (min-width: 992px) and (max-width: 1199px) {
+      .topnav {
+        display: none;
+      }
+    
+  .top_logo {
+     height: 5rem; 
+}
+    .title {
+      font-size: 6rem;
+    }
+    .main-header {
+      padding-top: 6%;
+    }
+}
+*/
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*
+  @media (min-width: 1200px) {
+      .topnav {
+        display: none;
+      }
+    
+  .top_logo {
+     height: 5rem; 
+}
+  .title {
+      font-size: 6rem;
+    }
+    .main-header {
+      padding-top: 5%;
+    }
+}
+*/
