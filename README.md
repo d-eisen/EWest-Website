@@ -1,6 +1,9 @@
 # EWest-Website
 
 This is an informational website for a local non profit organization. 
+
+This site is not template based. The foundation of the markup is original HTML. Some Bootstrap and Jquery items have been incorporated from plugins. Each item has been customized and adapted for use on this site.
+
 The page is designed mobile first. It has four main sections. Each section of the site is designed responsively.
   * Home Screen
   * About Us
