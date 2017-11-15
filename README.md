@@ -1,5 +1,18 @@
 # EWest-Website
-This project is an informational site for a local non-profit organization.
-This project is still in development. 
 
-Anticiapated to be ready for grading by 11/13/17
+This is an informational website for a local non profit organization. 
+The page is designed mobile first. It has four main sections. Each section of the site is designed responsively.
+  * Home Screen
+  * About Us
+  * News
+  * Contact form
+
+The site navigation is jquery based. It includes a respsonsive hamburger style nave this active on small screens sizes.
+ 
+The about us  and news section is based on Bootstrap card components. The cards are styled using custom CSS and employ different layout options. Cards with long content display additional content using button activated modals.
+
+The contact form section contains custom html and CSS layout. The form includes RegEx email format validation. The backend database that supports site inputs from users has not been added and will be included at a future date.
+
+This site will be proposed for utilization by the organization for which it was designed. A version approved by the organization is anticipated for live hosting within 90 days of proposal.
+
+ 
