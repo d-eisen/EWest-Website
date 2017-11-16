@@ -111,7 +111,12 @@ Hamburger Nav Styles
   margin-top: 1.5em;
 }
 
-/*Hamburger Nav Media Queries*/
+/*
+========================================================================== 
+Hamburger Nav Media Query
+========================================================================== 
+*/
+
 @media (min-width: 780px) {
 
   .menu-toggle { display: none; }
@@ -194,19 +199,6 @@ Card Styles
 .card {
   padding: 1%;
   margin-top: 1rem;
-  margin-right:;
-/*  margin-bottom: 1rem; */
-/*  position: relative;*/
-/*  display: -ms-flexbox;*/
-/*  display: flex;*/
-/*  -ms-flex-direction: column;*/
-/*  flex-direction: column;*/
-/*  max-width: 20;*/
-/*  word-wrap: break-word;*/
-/*  background-color: #fff;*/
-/*  background-clip: border-box;*/
-/*  border: 1px solid rgba(0,0,0,.125);*/
-/*  border-radius: .25rem;*/
 }
     
 .video-cap {
@@ -231,10 +223,6 @@ Card Styles
   color: #ffffff;
 }
 
-.list-group-item {
-
-}
-
 .video-cap {
   border-radius: .25em;
 }
@@ -244,7 +232,7 @@ Card Styles
 }
 
 /* 
-Card Styling for Individual Cards
+    Card Styling for Individual Cards
 */
 #about {
   background-color: rgba(255, 200, 87, 1); 
@@ -329,10 +317,9 @@ Contact Form
 
 .signup_form {
   background: #fff;
-  padding: 3em 2em 2em 4em;
-  max-width: 400px;
-  margin: 10px auto 0;
-  margin-top: 2rem;
+  padding: 2em 2em 2em 2em;
+  max-width: 550px;
+  margin: 2rem auto 2rem;
   box-shadow: 0 0 1em #222;
   border-radius: 5px;
 }
@@ -392,7 +379,6 @@ span:after {
   margin-top: -8px;
 }
 input[type="submit"] {
-/*  background: #2F558E;*/
   background-color: #597681;
   box-shadow: 0 3px 0 0 rgb(90, 119, 129);
   border-radius: 5px;
@@ -406,105 +392,6 @@ input[type="submit"] {
   outline: none;
   padding: .8em 0;
   text-shadow: 0 1px #68B25B;
-
 }
 
-/* ================================= 
-  Media Queries
-==================================== */
 
-/*// Extra small devices (portrait phones, less than 576px)*/
-/*  @media (max-width: 575px) {*/
-/*    .staticNav {*/
-/*      display: none;*/
-    }
-/*    .top_logo {*/
-/*     height: 4rem; */
-    }
-/*    .title {*/
-/*      font-size: 4em;*/
-/*    }*/
-/*    .main-header {*/
-/*      padding-top: 8%;*/
-    }
-}
-
-/*// Small devices (landscape phones, 576px and up)*/
-/*
-  @media (min-width: 576px) and (max-width: 767px) {
-    .staticNav {
-      display: none;
-    }
-    
-  .top_logo {
-     height: 3rem;
-}
-    .title {
-      font-size: 4rem;
-    }
-    .main-header {
-      padding-top: 8%;
-    }
-}
-*/
-
-/*// Medium devices (tablets, 768px and up)*/
-/*
-    @media (min-width: 768px) and (max-width: 991px) {
-      .topnav {
-        display: none;
-      }
-      
-      .top_logo {
-     height: 4rem; 
-}
-      .title {
-      font-size: 5rem;
-    }
-    .main-header {
-      padding-top: 8%;
-    }
-*/
-    /*
-  .card-column {
-    column-count: 3;
-*/  
-/*    }*/
-
-/*// Large devices (desktops, 992px and up)*/
-/*
-  @media (min-width: 992px) and (max-width: 1199px) {
-      .topnav {
-        display: none;
-      }
-    
-  .top_logo {
-     height: 5rem; 
-}
-    .title {
-      font-size: 6rem;
-    }
-    .main-header {
-      padding-top: 6%;
-    }
-}
-*/
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-/*
-  @media (min-width: 1200px) {
-      .topnav {
-        display: none;
-      }
-    
-  .top_logo {
-     height: 5rem; 
-}
-  .title {
-      font-size: 6rem;
-    }
-    .main-header {
-      padding-top: 5%;
-    }
-}
-*/
