@@ -1,5 +1,7 @@
 /*
-* — Header Styles —
+========================================================================== 
+Header Styles
+========================================================================== 
 */
 
 @font-face {
@@ -64,7 +66,6 @@ Hamburger Nav Styles
 }
 
 /*Hamburger Menu Toggle Styles*/
-
 .menu-toggle {
   position: absolute;
   padding: 0.8em;
@@ -111,7 +112,6 @@ Hamburger Nav Styles
 }
 
 /*Hamburger Nav Media Queries*/
-
 @media (min-width: 780px) {
 
   .menu-toggle { display: none; }
@@ -158,10 +158,11 @@ Hamburger Nav Styles
 }
 
 
-
-
-
-/*Header Styling*/
+/*
+========================================================================== 
+Header Styling
+========================================================================== 
+*/
 .main-header {
   font-family: 'PhillySans-Regular';
   padding-top: 5%;
@@ -179,7 +180,11 @@ Hamburger Nav Styles
 }
 
 
-/*Card Block Style*/
+/*
+========================================================================== 
+Card Styles
+========================================================================== 
+*/
 .card-deck {
   display: flex
   margin-left: auto;
@@ -189,15 +194,8 @@ Hamburger Nav Styles
 .card {
   padding: 1%;
   margin-top: 1rem;
-  margin-right: 
-    
-    
-/*    .video-cap {*/
-/*      box-sizing: border-box;*/
-      
-  }
+  margin-right:;
 /*  margin-bottom: 1rem; */
-
 /*  position: relative;*/
 /*  display: -ms-flexbox;*/
 /*  display: flex;*/
@@ -210,6 +208,10 @@ Hamburger Nav Styles
 /*  border: 1px solid rgba(0,0,0,.125);*/
 /*  border-radius: .25rem;*/
 }
+    
+.video-cap {
+      box-sizing: border-box;
+      }
 
 .card-block{
   padding: 3%;
@@ -230,7 +232,7 @@ Hamburger Nav Styles
 }
 
 .list-group-item {
-  
+
 }
 
 .video-cap {
@@ -241,7 +243,9 @@ Hamburger Nav Styles
   border-radius: .25em;
 }
 
-/* Card Styling for Individual Cards*/
+/* 
+Card Styling for Individual Cards
+*/
 #about {
   background-color: rgba(255, 200, 87, 1); 
 }
@@ -254,8 +258,7 @@ Hamburger Nav Styles
         background-color: #f04343;
     }
 
-
-    /*Mission and Partner Card Modal Styling*/
+  /*  Mission and Partner Card Modal Styling*/
 
     button.btn.btn-primary {
       margin-top: 1.3em;
@@ -263,19 +266,24 @@ Hamburger Nav Styles
       border: rgba(89, 118, 129, 1);
     }
 
-
     .modal-header {
         background-color: rgba(240, 67, 67, 0.9);
     }
+
+  /*  Mindset Card Styling*/
 
 
 #mindset {
     background-color: rgba(197, 255, 253, 1);
 }
 
+  /*  Makeup Card Styling*/
+
 #makeup {
     background-color: rgba(37, 146, 189, 1);
 }
+
+  /*  Partner Card  Styling*/
 
 #partners {
     background-color: rgba(255, 200, 87, 1);
@@ -296,8 +304,11 @@ Hamburger Nav Styles
 }
 
 
-/*Sign Up Form*/
-
+/*
+========================================================================== 
+Contact Form
+========================================================================== 
+*/
 .contact-title {
   font-family: 'PhillySans-Regular';
   background-color: fff;
