@@ -1,4 +1,4 @@
-# EWest-Website
+# EmpowerWest Website
 
 This is an informational website for a local non profit organization. 
 
