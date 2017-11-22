@@ -191,7 +191,7 @@ Card Styles
 ========================================================================== 
 */
 .card-deck {
-  display: flex
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
