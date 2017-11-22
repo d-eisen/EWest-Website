@@ -5,7 +5,7 @@ Header Styles
 */
 
 @font-face {
-  font-family: 'PhillySans-Regular';
+  font-family: "PhillySans-Regular";
   src: url("img/PhillySans-Regular.otf") format("opentype");
 }
 
@@ -13,49 +13,59 @@ Header Styles
 ==========================================================================
 Hamburger Nav Styles
 ========================================================================== 
-*/    
-    nav {
-      margin: 0;
-      padding: 0;
-    }
+*/
+nav {
+  margin: 0;
+  padding: 0;
+}
 
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      padding: 0;
-      margin: 5px;
-      display: none;
-    }
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+  display: none;
+}
 
-    nav ul.opening {
-      display: inline-block;
-      height: 30px;
-    }
+nav ul.opening {
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin: 0;
+  width: 100%;
+}
 
-    nav li { border-bottom: 1px solid #e2f6f5;}
+nav li {
+  border-bottom: 1px solid #e2f6f5;
+}
 
-    nav li:last-child { border-bottom: 1em; }
+nav li:last-child {
+  border-bottom: 1em;
+}
 
-    nav a {
-      color: #2F558E;
-      font-weight: 600
-      background: #e7a119;
-      display: block;
-      padding: 1.5em 4em 1.5em 3em;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+nav a {
+  color: #2f558e;
+  font-weight: 600;
+  background: #e7a119;
+  display: block;
+  padding: 1.5em 4em 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-    nav a:hover, nav a:focus { background: #E4B363; }
+nav a:hover,
+nav a:focus {
+  background: #e4b363;
+}
 
-    .site-nav--icon {
-      font-size: 1.4em;
-      margin-right: 1em;
-      width: 1.1em;
-      text-align: right;
-      color: rgba(0, 255, 177, 0.53);
-    }
+.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(0, 255, 177, 0.53);
+}
 
 /*Display Logo at top left*/
 .top_logo {
@@ -70,12 +80,14 @@ Hamburger Nav Styles
   position: absolute;
   padding: 0.8em;
   top: 1em;
-  right: .5em;
+  right: 0.5em;
   cursor: pointer;
 }
 
-.hamburger, .hamburger::before, .hamburger::after {
-  content: '';
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
   display: block;
   background: rgba(89, 118, 129, 1);
   height: 3px;
@@ -100,15 +112,13 @@ Hamburger Nav Styles
   transform: rotate(45deg);
 }
 
-.open .hamburger::before { display:none; }
+.open .hamburger::before {
+  display: none;
+}
 
 .open .hamburger::after {
   -webkit-transform: translateY(-1px) rotate(-90deg);
   transform: translateY(-1px) rotate(-90deg);
-}
-
-.main-header {
-  margin-top: 1.5em;
 }
 
 /*
@@ -118,8 +128,9 @@ Hamburger Nav Media Query
 */
 
 @media (min-width: 780px) {
-
-  .menu-toggle { display: none; }
+  .menu-toggle {
+    display: none;
+  }
 
   nav ul {
     display: flex;
@@ -140,7 +151,10 @@ Hamburger Nav Media Query
     background-color: #fff;
   }
 
-  nav a:hover,  nav a:focus { background-color: rgba(255,255,255,.10); }
+  nav a:hover,
+  nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
   .logo {
     flex: 0 0 200px;
@@ -153,15 +167,13 @@ Hamburger Nav Media Query
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-  background-color: #fff;
+    background-color: #fff;
   }
-  
-  
+
   nav ul {
     display: flex;
-  }  
+  }
 }
-
 
 /*
 ========================================================================== 
@@ -169,31 +181,43 @@ Header Styling
 ========================================================================== 
 */
 .main-header {
-  font-family: 'PhillySans-Regular';
+  font-family: "PhillySans-Regular";
   padding-top: 5%;
   padding-left: 8%;
   height: 630px;
   width: 100%;
-  background: #fff url('img/young man.jpg') no-repeat 50%;
+  background: #fff url("img/young man.jpg") no-repeat 50%;
   background-size: cover;
 }
 
 .title {
-  line-height: 90%;
-    font-size: 4em;
+  font-size: 4em;
   font-style: oblique;
 }
-
 
 /*
 ========================================================================== 
 Card Styles
 ========================================================================== 
 */
+
+.about-cards {
+  background-color: #e7e7ea99;
+  padding: 30px 5px;
+}
+
+.news_section {
+  padding: 30px 5px;
+}
+
+.news_section h2 {
+  margin-left: 10px;
+  font-size: 48px;
+}
+
 .card-deck {
   display: flex;
   margin: 0;
-  margin: 10px 5px;
 }
 
 .card {
@@ -201,7 +225,7 @@ Card Styles
   padding: 20px;
   border: none;
   border-radius: 0;
-  box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card .quote {
@@ -211,7 +235,7 @@ Card Styles
   background-color: rgba(0, 0, 0, 0);
   padding: 0 10px;
 }
-    
+
 .video-cap {
   box-sizing: border-box;
 }
@@ -224,7 +248,7 @@ Card Styles
 }
 
 .card-text {
-  font-weight:400;
+  font-weight: 400;
   padding-bottom: 5%;
 }
 
@@ -233,73 +257,78 @@ Card Styles
 }
 
 .video-cap {
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 .card-img-top {
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 /* 
     Card Styling for Individual Cards
 */
 #about {
-  background-color: rgba(255, 200, 87, 1); 
+  background-color: rgba(255, 200, 87, 1);
 }
 
 #mission {
-    background-color: #f04343;
+  background-color: #f04343;
 }
 
-    #mission li {
-        background-color: #f04343;
-    }
+#mission li {
+  background-color: #f04343;
+}
 
-  /*  Mission and Partner Card Modal Styling*/
+/*  Mission and Partner Card Modal Styling*/
 
-    button.btn.btn-primary {
-      margin-top: 1.3em;
-      background-color: rgba(89, 118, 129, 1);
-      border: rgba(89, 118, 129, 1);
-    }
+button.btn.btn-primary {
+  margin-top: 5px;
+  background-color: rgba(89, 118, 129, 1);
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+}
 
-    .modal-header {
-        background-color: rgba(240, 67, 67, 0.9);
-    }
+button.btn.btn-primary:hover {
+  background-color: rgba(89, 118, 129, 0.9);
+  cursor: pointer;
+}
 
-  /*  Mindset Card Styling*/
+.modal-header {
+  background-color: rgba(240, 67, 67, 0.9);
+}
 
+/*  Mindset Card Styling*/
 
 #mindset {
-    background-color: rgba(197, 255, 253, 1);
+  background-color: rgba(197, 255, 253, 1);
 }
 
-  /*  Makeup Card Styling*/
+/*  Makeup Card Styling*/
 
 #makeup {
-    background-color: rgba(37, 146, 189, 1);
+  background-color: rgba(37, 146, 189, 1);
 }
 
-  /*  Partner Card  Styling*/
+/*  Partner Card  Styling*/
 
 #partners {
-    background-color: rgba(255, 200, 87, 1);
+  background-color: rgba(255, 200, 87, 1);
 }
 
-    #partners li {
-        background-color: rgba(255, 200, 87, 1); 
+#partners li {
+  background-color: rgba(255, 200, 87, 1);
 }
 
-    /*Partner Card Modal Styling*/
+/*Partner Card Modal Styling*/
 
-    #partnerModalHeader {
-      background-color: rgba(255, 200, 87, .9)
-    }
+#partnerModalHeader {
+  background-color: rgba(255, 200, 87, 0.9);
+}
 
 .title {
   max-width: 200px;
 }
-
 
 /*
 ========================================================================== 
@@ -307,7 +336,7 @@ Contact Form
 ========================================================================== 
 */
 .contact-title {
-  font-family: 'PhillySans-Regular';
+  font-family: "PhillySans-Regular";
   background-color: fff;
   font-size: 3em;
   margin-left: 0px;
@@ -315,49 +344,55 @@ Contact Form
 }
 
 .contact_form {
-/*  background: hsla(208, 12%, 25%, 0.77);*/
+  background-color: #e7e7ea99;
   font-family: sans-serif;
-  font-size: 1em
+  font-size: 1em;
 }
 
-.helptext{
-  font-size: .8em;
+.helptext {
+  font-size: 0.8em;
 }
 
 .signup_form {
   background: #fff;
   padding: 2em 2em 2em 2em;
-  max-width: 550px;
+  max-width: 1000px;
+  width: 100%;
   margin: 2rem auto 2rem;
-  box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 .form-p {
-  margin: 0 0 3em 0;
-  position: relative;
+  margin-bottom: 15px;
 }
+
+.form-p label {
+  margin-bottom: 0;
+}
+
 .sign-up label {
   display: block;
   font-size: 1.6em;
-  margin: 0 0 .5em;
+  margin: 0 0 0.5em;
   color: #333;
 }
 input {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  outline: none
+  outline: none;
 }
 input[type="text"],
 input[type="email"] {
   background: #f5f5f5;
   border: 1px solid #e5e5e5;
-  font-size: 1.6em;
-  padding: .8em .5em;
-  border-radius: 5px;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  padding: 5px;
 }
 input[type="text"]:focus,
 input[type="email"]:focus {
-  background: #fff
+  background: #fff;
 }
 .sign-up span {
   border-radius: 5px;
@@ -365,7 +400,7 @@ input[type="email"]:focus {
   font-size: 1.3em;
   text-align: center;
   position: absolute;
-  background: #2F558E;
+  background: #2f558e;
   left: 105%;
   top: 25px;
   width: 160px;
@@ -382,24 +417,21 @@ span:after {
   position: absolute;
   pointer-events: none;
   border-color: rgba(136, 183, 213, 0);
-  border-right-color: #2F558E;
+  border-right-color: #2f558e;
   border-width: 8px;
   margin-top: -8px;
 }
+
 input[type="submit"] {
-  background-color: #597681;
-  box-shadow: 0 3px 0 0 rgb(90, 119, 129);
-  border-radius: 5px;
+  box-shadow: none;
   border: none;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 2em;
-  line-height: 1.6em;
-  margin: 2em 0 0;
-  outline: none;
-  padding: .8em 0;
-  text-shadow: 0 1px #68B25B;
+  padding: 10px;
+  background-color: rgba(89, 118, 129, 1);
+  color: white;
+  font-size: 16px;
 }
 
-
+input[type="submit"]:hover {
+  background-color: rgba(89, 118, 129, 0.9);
+  cursor: pointer;
+}
