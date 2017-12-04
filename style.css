@@ -173,6 +173,11 @@ Hamburger Nav Media Query
   nav ul {
     display: flex;
   }
+
+  #GotoFb {
+    margin-top: rem;
+    } 
+
 }
 
 /*
@@ -287,11 +292,18 @@ button.btn.btn-primary {
   border: none;
   border-radius: 0;
   padding: 10px 20px;
+  text-decoration: none;
 }
 
 button.btn.btn-primary:hover {
   background-color: rgba(89, 118, 129, 0.9);
   cursor: pointer;
+  text-decoration: none;
+}
+
+button.btn.btn-primary.FbLink {
+  text-decoration: none;
+  color: fff;
 }
 
 .modal-header {
@@ -329,6 +341,38 @@ button.btn.btn-primary:hover {
 .title {
   max-width: 200px;
 }
+
+/*
+========================================================================== 
+Goto Facebook
+========================================================================== 
+*/
+
+.GotoFb {
+  font-family: "PhillySans-Regular";
+  padding-top: 5%;
+  padding-left: 8%;
+  background: #fff url("img/WomanatWall.jpg") no-repeat 70%;
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.FbLink {
+  font-family: sans-serif; 
+  color: #fff;
+  text-decoration: none;
+  max-width: .5em;
+  text-shadow: 
+}
+
+.FbLink :hover {
+  color: #fff;
+  text-decoration: none;
+  max-width: .5em;
+}
+
 
 /*
 ========================================================================== 
