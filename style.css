@@ -357,7 +357,7 @@ Goto Facebook
   font-family: "PhillySans-Regular";
   padding-top: 5%;
   padding-left: 8%;
-  background: #fff url("/img/WomanAtWall.jpg") no-repeat 70%;
+  background: #fff url("./img/WomanAtWall.jpg") no-repeat 70%;
   height: 550px;
   width: 100%;
   background-size: cover;
