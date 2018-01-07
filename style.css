@@ -349,6 +349,23 @@ button.btn.btn-primary.FbLink {
 
 /*
 ========================================================================== 
+EduIsKing
+========================================================================== 
+*/
+
+.EduIsKing {
+  /* font-family: "PhillySans-Regular";
+  padding-top: 5%;
+  padding-left: 8%; */
+  background: #fff url("./img/EducationIsKingv3.jpg") no-repeat;
+  height: 2100px;
+  width: 100%;
+  background-size: cover;
+
+}
+
+/*
+========================================================================== 
 Goto Facebook
 ========================================================================== 
 */
