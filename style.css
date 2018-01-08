@@ -347,22 +347,7 @@ button.btn.btn-primary.FbLink {
   max-width: 200px;
 }
 
-/*
-========================================================================== 
-EduIsKing
-========================================================================== 
-*/
 
-.EduIsKing {
-  /* font-family: "PhillySans-Regular";
-  padding-top: 5%;
-  padding-left: 8%; */
-  background: #fff url("./img/EducationIsKingv3.jpg") no-repeat;
-  height: 2100px;
-  width: 100%;
-  background-size: cover;
-
-}
 
 /*
 ========================================================================== 
@@ -387,6 +372,7 @@ Goto Facebook
   text-decoration: none;
   max-width: .5em;
   vertical-align: center;
+  text-justify: right;
 }
 
 .FbLink :hover {
@@ -395,10 +381,38 @@ Goto Facebook
   max-width: .5em;
 }
 
+.FbLogo{
+  color: #fff;
+
+}
+
+
 .fab fa-facebook-square {
   vertical-align: center;
 }
 
+#GotoFb {
+  background-color:#3B5998;
+  border-radius: 5px;
+}
+
+/*
+========================================================================== 
+EduIsKing
+========================================================================== 
+*/
+
+.EduIsKing {
+  /* /* font-family: "PhillySans-Regular"; */
+  
+  margin-top: 3%;
+  padding-left: 8%;
+  background: #fff url("./img/EducationIsKingv3.jpg") no-repeat 70%;
+  height: 2100px;
+  width: 100%;
+  background-size: cover;
+
+}
 /*
 ========================================================================== 
 Contact Form
