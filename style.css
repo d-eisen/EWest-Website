@@ -386,6 +386,7 @@ Goto Facebook
   color: #fff;
   text-decoration: none;
   max-width: .5em;
+  vertical-align: center;
 }
 
 .FbLink :hover {
@@ -394,6 +395,9 @@ Goto Facebook
   max-width: .5em;
 }
 
+.fab fa-facebook-square {
+  vertical-align: center;
+}
 
 /*
 ========================================================================== 
