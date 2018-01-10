@@ -436,7 +436,7 @@ Goto Facebook
 
 /*
 ========================================================================== 
-EduIsKing
+EduIsKing styling and Media Query
 ========================================================================== 
 */
 
@@ -451,6 +451,17 @@ EduIsKing
   background-size: cover;
 
 }
+
+
+@media (max-width: 750px)
+{
+  .EduIsKing 
+  { background: #fff url("./img/EducationIsKingSm.jpg") no-repeat;
+    width: 100%;
+    height: 600px;
+  }
+}
+
 /*
 ========================================================================== 
 Contact Form
