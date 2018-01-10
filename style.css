@@ -190,7 +190,7 @@ Hamburger Nav Media Query
 Header Styling
 ========================================================================== 
 */
-.main-header {
+/* .main-header {
   font-family: "PhillySans-Regular";
   padding-top: 5%;
   padding-left: 8%;
@@ -203,7 +203,25 @@ Header Styling
 .title {
   font-size: 4em;
   font-style: oblique;
-}
+} */
+
+/* .main-header {
+  font-family: "PhillySans-Regular";
+  padding-top: 5%;
+  padding-left: 65%;
+  height: 900px;
+  width: 100%;
+  background: #fff url("./img/L&NBldgSkyBkgV3.jpg") no-repeat 50%;
+  background-size: cover;
+} */
+
+/* .title {
+  font-size: 4.5em;
+  font-style: oblique;
+  line-height: .85em;
+  text-align: right;
+} */
+
 
 /*
 ========================================================================== 
@@ -407,8 +425,8 @@ EduIsKing
   
   margin-top: 3%;
   padding-left: 8%;
-  background: #fff url("./img/EducationIsKingv3.jpg") no-repeat 70%;
-  height: 2500px;
+  background: #fff url("./img/EducationIsKingv5.jpg") no-repeat;
+  height: 2100px;
   width: 100%;
   background-size: cover;
 
