@@ -221,7 +221,27 @@ Header Styling
   line-height: .85em;
   text-align: right;
 } */
+/*
+========================================================================== 
+Slider Styles
+========================================================================== 
+*/
 
+a.btn.btn-primary {
+  margin-top: 5px;
+  margin-left: 90%;
+  background-color: rgba(89, 118, 129, 1);
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a.btn.btn-primary:hover {
+  background-color: rgba(89, 118, 129, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+}
 
 /*
 ========================================================================== 
