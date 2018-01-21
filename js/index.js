@@ -10,13 +10,7 @@ $('.menu-toggle').on("click", function() {
   $(this).toggleClass('open');
 
 })
-//===================================
-//Slider1 Image Link
-//===================================
 
-Document.getElementById(Slider1Focus).onclick = function() {
-  window.location="Events"; 
-}
 
 
 //===================================
