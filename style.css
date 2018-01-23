@@ -227,9 +227,9 @@ Header Styling (Use if carousel fails)
 ========================================================================== 
 Section Controls
 ==========================================================================  */
-#LearnMore {
+/* #LearnMore {
   display: none;
-}
+} */
 
 #contact {
   display: none;
@@ -300,7 +300,8 @@ Card Styles
 }
 
 .video-cap {
-  box-sizing: border-box;
+  display: inline;
+  /* box-sizing: border-box; */
 }
 
 .card-title {
