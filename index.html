@@ -1,239 +1,186 @@
 <!DOCTYPE shtml>
 <html lang="en">
-<!--    Head Tags-->
-
-<head>
-  <meta charset="utf-8">
+  <!--    Head Tags-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-
+  
   <!--    Bootstrap: compiled and minified CSS from Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
-
-
-  <!--    Bootstrap: compiled and minified JavaScript from Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" rel="stylesheet" /><!--    Bootstrap: compiled and minified JavaScript from Bootstrap--><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-
-  <!--    Style Sheets and Fonts-->
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-
-<!-- Favicon -->
-  <link rel="shortcut icon" href="/img/EW.ico" type="image/x-icon">
-  <link rel="icon" href="/img/EW.ico" type="image/x-icon">
-
+    
+    <!--    Style Sheets and Fonts-->
+	<link href="style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet" /><script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script><!-- Favicon -->
+	<link href="/img/EW.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="/img/EW.ico" rel="icon" type="image/x-icon" />
 </head>
 
-
 <!--    Site Body-->
+<body><!--  Site Nav with Hamburger-->
+<nav class="site-nav">
+  <div class="menu-toggle">
+  <div class="hamburger"></div>
+  </div>
 
-<body>
-  <!--  Site Nav with Hamburger-->
-  <nav class="site-nav">
-    <div class="menu-toggle">
-      <div class="hamburger"></div>
-    </div>
+<!--   Logo image Graphic--><img class="top_logo" src="img/EWLlogo.jpg" />
+  <ul class="open desktop">
+    <li><a href="#about">About us</a></li>
+    <li><a href="#LearnMore">Events</a></li>
+    <!-- <li>
+          <a href="#FbTop">Social</a>
+        </li> --><!-- <li>
+          <a href="#contact">Contact us</a>
+        </li> -->
+  </ul>
+</nav>
 
-    <!--   Logo image Graphic-->
-    <img class="top_logo" src="img/EWLlogo.jpg" />
-    <ul class="open desktop">
-      
-      <li>
-        <a href="#about">About us</a>
-      </li>
-      <li>
-          <a href="#LearnMore">Events</a>
-      </li>
-      <!-- <li>
-        <a href="#FbTop">Social</a>
-      </li> -->
-      <!-- <li>
-        <a href="#contact">Contact us</a>
-      </li> -->
-    </ul>
-  </nav>
-
-  <!--    Site Header-->
-  <!-- <div id="top" class="main-header">
+<!--    Site Header (backup should carousel fail
+   <div id="top" class="main-header">
     <span class="title">Empower West Louisville</span>
   </div> -->
-
-
+  
   <!--    Main Section of Site-->
-  <main>
 
-  <!-- Image Slider carousel -->
+<main><!-- Image Slider carousel -->
+  <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+      <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+      <li data-slide-to="3" data-target="#carouselExampleIndicators"></li>
+    </ol>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="#NewsStory1"><img class="d-block w-100" src="./img/ColorOfLawSlider.jpg" alt="City Wide Book Read"></a>
-              <div class="carousel-caption d-none d-md-block">
-              </div>
-                
-            </div>
-            <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="./img/L&NBldgSkyBkgSliderV4.jpg" alt="EmpowerWest"></a>
-            </div>
-            <!-- <div class="carousel-item">
-                <a href="#NewsStory1"><img class="d-block w-100" src="./img/ColorOfLawSlider.jpg" alt="City Wide Book Read"></a>
-            </div> -->
-            <div class="carousel-item">
-                <a href="#NewsStory2"><img class="d-block w-100" src="./img/Feb18WLF.jpg" alt="February West Louisille Forum"></a>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+<div class="carousel-inner">
+  <div class="carousel-item active"><a href="#NewsStory1"><img alt="City Wide Book Read" class="d-block w-100" src="./img/ColorOfLawSlider.jpg" /></a>
 
-    <!--    This Section includes Bootstrap Cards Containing Organization Information-->
-    <section class="about-cards">
-      <div class="card-deck">
+  <div class="carousel-caption d-none d-md-block"></div>
+  </div>
 
-        <!--    "About" Card-->
-        <div class="card col-sm" id="about">
-          <div class="card-block">
-            <h4 class="card-title">About Us</h4>
-            <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic,
-              and spiritual power of West Louisville residents so that they might maximize their God-given potential and
-              capacity.
-            </p>
-          </div>
-        </div>
+<div class="carousel-item"><a href="#"><img alt="EmpowerWest" class="d-block w-100" src="./img/L&amp;NBldgSkyBkgSliderV5.jpg" /></a></div>
 
+<div class="carousel-item"><a href="#NewsStory1"><img alt="City Wide Book Read" class="d-block w-100" src="./img/ColorOfLawSlider.jpg" /></a></div>
+<!-- <div class="carousel-item"><a href="#NewsStory2"><img alt="February West Louisille Forum" class="d-block w-100" src="./img/Feb18WLF.jpg" /></a></div> --></div>
+<a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"> <span class="sr-only">Next</span> </a></div>
+<!--    This Section includes Bootstrap Cards Containing Organization Information-->
 
+<section class="about-cards">
+<div class="card-deck"><!--    "About" Card-->
+<div class="card col-sm" id="about">
+<div class="card-block">
+<h4 class="card-title">About Us</h4>
 
-        <!--   "Mission" Card including Undordered List-->
-        <div class="card col-sm" id="mission">
-          <div class="card-block">
-            <h4 class="card-title">Our Mission</h4>
-            <h6 class="card-subtitle">Empower West will</h6>
-            <p class="quote">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of
-              power.
-            </p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#missionModal"> Read More</button>
-          </div>
-        </div>
+<p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic, and spiritual power of West Louisville residents so that they might maximize their God-given potential and capacity.</p>
+</div>
+</div>
+<!--   "Mission" Card including Undordered List-->
 
-        <!--    Modal -->
-        <div class="modal fade" id="missionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Our Mission</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <ol class="list-group list-group-flush">
-                  <li class="list-group-item">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places
-                    of power.</li>
-                  <li class="list-group-item">Help change the hearts of people in and outside of West Louisville so that people will see the importance
-                    of West Louisville and her people in all parts of Greater Louisville.</li>
-                  <li class="list-group-item">Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
-                  <li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
-                  <li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive
-                    way.
-                  </li>
-                </ol>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="card col-sm" id="mission">
+<div class="card-block">
+<h4 class="card-title">Our Mission</h4>
 
+<h6 class="card-subtitle">Empower West will</h6>
 
-        <!--    "Mindset" Card -->
-        <div class="card col-sm" id="mindset">
-          <div class="card-block">
-            <h4 class="card-title">Mindset</h4>
-            <p class="card-text">Based on our shared Christian orientation, EmpowerWest,will stand with those most easily ignored in business
-              dealings because they have neither voice nor place at the bargaining table, and yet their lives are most affected
-              by potential business decisions.</p>
-          </div>
-        </div>
+<p class="quote">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</p>
+<button class="btn btn-primary" data-target="#missionModal" data-toggle="modal" type="button">Read More</button></div>
+</div>
+<!--    Modal -->
 
-        <!--    Force column break-->
-        <div class="w-100"></div>
+<div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="missionModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLongTitle">Our Mission</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
 
-        <!--    "Makeup" Card -->
-        <div class="card col-sm" id="makeup">
-          <div class="card-block">
-            <h4 class="card-title">Makeup</h4>
-            <p class="card-text">A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion
-              of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville’s
-              current residents and secondarily for the profit-making of investors.</p>
-          </div>
-        </div>
+<div class="modal-body">
+<ol class="list-group list-group-flush">
+	<li class="list-group-item">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of power.</li>
+	<li class="list-group-item">Help change the hearts of people in and outside of West Louisville so that people will see the importance of West Louisville and her people in all parts of Greater Louisville.</li>
+	<li class="list-group-item">Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
+	<li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
+	<li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive way.</li>
+</ol>
+</div>
 
-        <!--    "Partners" Card-->
-        <div class="card col-sm" id="partners">
-          <div class="card-block">
-            <h4 class="card-title">Our Partners</h4>
-            <p class="quote">The work of Empower list is supported by a variety of community partners. See the list of sponsoring organizations.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#partnerModal"> Read More</button>
-          </div>
-        </div>
+<div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+<!--    "Mindset" Card -->
 
-        <!--  Modal -->
-        <div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header" id="partnerModalHeader">
-                <h5 class="modal-title" id="ourPartersTitleHeader">Our Partners</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <ol class="list-group list-group-flush">
-                  <li class="list-group-item">Broadway Baptist Church</li>
-                  <li class="list-group-item">Christ's Church for Our Community</li>
-                  <li class="list-group-item">Crescent Hill Baptist Church</li>
-                  <li class="list-group-item">Highland Baptist Church</li>
-                  <li class="list-group-item">Highland Presbyterian Church</li>
-                  <li class="list-group-item">Kentucky Baptist Fellowship</li>
-                  <li class="list-group-item">Pewee Valley Presbyterian Church</li>
-                  <li class="list-group-item">Ridgewood Baptist Church</li>
-                  <li class="list-group-item">Simmons College of Kentucky</li>
-                  <li class="list-group-item">St. Matthews Episcopal Church</li>
-                  <li class="list-group-item">St. Stephen Church</li>
-                  <li class="list-group-item">Sowers of Justice Network</li>
-                  <li class="list-group-item">Westwood Presbyterian Church</li>
-                </ol>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-<!--Goto Facebook-->
-    <!-- <section id="FbTop">
+<div class="card col-sm" id="mindset">
+<div class="card-block">
+<h4 class="card-title">Mindset</h4>
+
+<p class="card-text">Based on our shared Christian orientation, EmpowerWest,will stand with those most easily ignored in business dealings because they have neither voice nor place at the bargaining table, and yet their lives are most affected by potential business decisions.</p>
+</div>
+</div>
+<!--    Force column break-->
+
+<div class="w-100"></div>
+<!--    "Makeup" Card -->
+
+<div class="card col-sm" id="makeup">
+<div class="card-block">
+<h4 class="card-title">Makeup</h4>
+
+<p class="card-text">A coalition of Louisville area pastors and churches, committed to insuring that development and the infusion of capital into West Louisville will be primarily for the empowerment and sustainability of West Louisville&rsquo;s current residents and secondarily for the profit-making of investors.</p>
+</div>
+</div>
+<!--    "Partners" Card-->
+
+<div class="card col-sm" id="partners">
+<div class="card-block">
+<h4 class="card-title">Our Partners</h4>
+
+<p class="quote">The work of Empower list is supported by a variety of community partners. See the list of sponsoring organizations.</p>
+<button class="btn btn-primary" data-target="#partnerModal" data-toggle="modal" type="button">Read More</button></div>
+</div>
+<!--  Modal -->
+
+<div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="partnerModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header" id="partnerModalHeader">
+<h5 class="modal-title" id="ourPartersTitleHeader">Our Partners</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
+<div class="modal-body">
+<ol class="list-group list-group-flush">
+  <li class="list-group-item">Baptist Seminary of Kentucky</li>
+  <li class="list-group-item">Bates Memorial Baptist Church</li>
+  <li class="list-group-item">Buechel Park Baptist Church</li>
+  <li class="list-group-item">Burnett Avenue Baptist Church</li>
+  <li class="list-group-item">Campbellsville University</li>
+  <li class="list-group-item">Central Presbyterian Church</li>
+  <li class="list-group-item">Christ United Methodist Church</li>
+  <li class="list-group-item">Christ&#39;s Church for Our Community</li>
+	<li class="list-group-item">Crescent Hill Baptist Church</li>
+	<li class="list-group-item">Highland Baptist Church</li>
+  <li class="list-group-item">Highland Presbyterian Church</li>
+  <li class="list-group-item">Joshua Tabernacle Baptist Church</li>
+  <li class="list-group-item">Nehemiah Baptist Church</li>
+  <li class="list-group-item">Plymouth Congregational United Church of Christ</li>
+	<li class="list-group-item">Ridgewood Baptist Church</li>
+  <li class="list-group-item">Simmons College of Kentucky</li>
+  <li class="list-group-item">St. Edward Catholic Church</li>
+	<li class="list-group-item">St. Matthews Episcopal Church</li>
+	<li class="list-group-item">St. Stephen Church</li>
+  <li class="list-group-item">Sowers of Justice Network</li>
+
+</ol>
+</div>
+
+<div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Goto Facebook--><!-- <section id="FbTop">
         <div class="GotoFb">
             <h1 class="display-3">In the News</h1>
             <h4 id="FbSubtitle" class="card-subtitle">For all the latest, check us out on Facebook</h4>
@@ -243,118 +190,112 @@
               <a class="FbLink" href="https://www.facebook.com/empowerwestlouisville/" role="button"/a>Empower West Louisville</a>
             </button>
         </div>
-    </section> -->
-
-
-<!--Slider Focus-->
-
-<!--Slider Image1 Focus-->
-    <!-- <section id= "EventSection">
+    </section> --><!--Slider Focus--><!--Slider Image1 Focus--><!-- <section id= "EventSection">
       <div class="Events">
         <a href="#EventSection"><img id="Slider1Focus" src="./img/EducationIsKingv5.jpg"></a>
       </div>
-    </section>  -->
-
-    <!--Slider Image2 Focus-->
-    <!-- <section >
+    </section>  --><!--Slider Image2 Focus--><!-- <section >
       <div class="Events" id="Slider2Focus">
         
       </div>
-    </section>  -->
-
-    <!--Slider Image3 Focus-->
-    <!-- <section >
+    </section>  --><!--Slider Image3 Focus--><!-- <section >
       <div class="Events">
         <a href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2"><img id="Slider3Focus" src="./img/ColorOfLawSlider.jpg"></a>
       </div>
-    </section>  -->
-
-    <!--Slider Image4 Focus-->
-    <!-- <section >
+    </section>  --><!--Slider Image4 Focus--><!-- <section >
         <div class="Events">
             <a href="https://www.eventbrite.com/e/the-confederate-monument-messhow-the-confederates-won-the-cultural-war-in-america-tickets-42056870231?aff=erelpanelorg"><img id="Slider4Focus" src="./img/Feb18WLF.jpg"></a>
           </div>
-    </section>  -->
-
-     <!--Slider Image5 Focus-->
-     <!-- <section >
+    </section>  --><!--Slider Image5 Focus--><!-- <section >
       <div class="Events" id="Slider5Focus">
         
       </div>
-    </section>  -->
+    </section>  --><!-- Card Section "News" -->
 
+<section class="news_section" id="LearnMore">
+<div class="card-deck">
 
-    <!-- Card Section "News" -->
-    <section class="news_section" id="LearnMore">
-      <div class="card-deck">
-        <!-- News Story-->
-        <div class="card" class="news_card" id="NewsStory1">
-          <iframe class="video-cap" src="https://www.youtube.com/embed/6hhdqyJmfVQ?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>          <div class="card-body">
-            <h4 class="card-title">Empower West Pastors Endorse Rothstein's "The Color of Law"
-            </h4>
-            <p class="card-text">Empower West Pastors Endorse "Color of Law". Pastors from two local churches speak to the impact of Rothstein's book and the importance of the message that he will be bringing to the City Wide Book Read event.</p>
-          </div>
-          <a href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2" class="btn btn-primary">Register Now</a>
-          <div class="card-footer">
-            <small class="text-muted">    
-              <a href="#" class="toplink">Back to top</a>
-            </small>
-          </div>
-        </div>
-        <!-- News Story-->
-        <div class="card" class="news_card" id="NewsStory2">
-            <iframe class="video-cap" src="https://www.youtube.com/embed/H3h5kJFYG00?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div class="card-body">
-            <h4 class="card-title">Empower West City Wide Book Read to Feature Author, Richard Rothstein
-            </h4>
-            <p class="card-text">Join us February 12th for the Citywide Book Read featuring Richard Rothstein, author of The Color of Law. The Empower West Louisville citywide book read will be held Monday February 12 at 7 p.m. at Crescent Hill Baptist Church on Frankfort Avenue. To register find us on Eventbrite. Or for more information call Simmons College of Kentucky at 502 776-1443.</p>
-          </div>
-          <a href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2" class="btn btn-primary">Register Now</a>
-          <div class="card-footer">
-            <small class="text-muted">    
-              <a href="#" class="toplink">Back to top</a>
-            </small>
-          </div>
-        </div>
+<!-- News Story-->
+<div class="card" id="NewsStory1">
+    <a href= "img/parking map book club.jpg"><img class="card-img-top" src="img/parking map book club.jpg" alt="Card image cap"/img></a>
+  
+    <div class="card-body">
+    <h4 class="card-title">City Wide Book Read Parking</h4>
+    
+    <p class="card-text">Already registered for the City Wide Book Read? Click for a <a href="img/parking map book club.pdf">parking map</a> of the venue.</p>
+    </div>
+    
+    <div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+    </div>
+    
+<!-- News Story-->
+<div class="card" id="NewsStory2">
+  <a href= "http://nextlouisville.wfpl.org/2018/02/09/the-next-louisville-redlinings-complicated-legacy/"><img class="card-img-top" src="img/next-louisville-103117.jpg" alt="Card image cap"/img></a>
 
-        <!-- News Story-->
-        <div class="card" class="news_card" id="NewsStory3">
-          <!-- <img class="card-img-top" src="img/West_Lou_Forum.jpg" alt="Card image cap"> -->
-          <iframe class="video-cap" src="https://www.youtube.com/embed/PjfsA5ibrN4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div class="card-body">
-            <h4 class="card-title">West Louisville Forum Addresses Confederate Monuments</h4>
-            <p class="card-text">Simmons College of Kentucky Present the next West Louisville Forum, Wed, Feb. 7, 12N with Karen L. Cox, Author, TOPIC "The Confederate Monument Mess: How the Confederates Won the Cultural War in America" Free and open to the public! REGISTER at Eventbrite.com</p>
-          </div>
-          <a href="https://www.eventbrite.com/e/the-confederate-monument-messhow-the-confederates-won-the-cultural-war-in-america-tickets-42056870231?aff=erelpanelorg" class="btn btn-primary">Register Now</a>
-          <div class="card-footer">
-            <small class="text-muted">
-              <a href="#" class="toplink">Back to top</a>
-            </small>
-          </div>
-        </div>
+  <div class="card-body">
+  <h4 class="card-title">Redlining, City Wide Book Read Featured in News</h4>
+  
+  <p class="card-text">Louisville's history of redlining a central feature in this arcticle by Louisville Public Media. Three EmpowerWest pastors discuss Rothstein's "The Color of Law" and the local impact of redlining.</p>
+  </div>
+  
+  <div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+  </div>  
 
-        <!-- News Story-->
-        <div class="card" class="news_card" id="NewsStory4">
-          <iframe class="video-cap" src="https://www.youtube.com/embed/rEp2Mf-ZDU4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div class="card-body">
-            <h4 class="card-title">Angela Project Conference 2017 Recap</h4>
-            <p class="card-text">Baptists from the Cooperative Baptist Fellowship, National Baptist Convention of America International, Inc.,
-              and the Progressive National Baptist Convention convened in Louisville, Ky., for a historic gathering
-              focused on racial justice and education hosted by Simmons College of Kentucky @ the Annual Session of the NBCA,
-              Intl. Inc.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">
-              <a href="#" class="toplink">Back to top</a>
-            </small>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- News Story-->
+<div class="card" id="NewsStory3"><iframe allow="autoplay; encrypted-media" allowfullscreen="" class="video-cap" frameborder="0" src="https://www.youtube.com/embed/6hhdqyJmfVQ?showinfo=0"></iframe>
 
-    <!-- <Section "Contact"> -->
-    <!-- Contact Form-->
-    <!-- <section class="contact_form card-deck" id="contact">
+<div class="card-body">
+<h4 class="card-title">Empower West Pastors Endorse Rothstein&#39;s &quot;The Color of Law&quot;</h4>
+
+<p class="card-text">Pastors from two local churches speak to the impact of Rothstein&#39;s book and the importance of the message that he will bring to the City-Wide Book Read on February 12.</p>
+</div>
+<a class="btn btn-primary" href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2">Register Now</a>
+
+<div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+</div>
+
+<!--    Force column break-->
+
+<div class="w-100"></div>
+
+<!-- News Story-->
+
+<div class="card" id="NewsStory4"><iframe allow="autoplay; encrypted-media" allowfullscreen="" class="video-cap" frameborder="0" src="https://www.youtube.com/embed/H3h5kJFYG00?rel=0&amp;showinfo=0"></iframe>
+
+<div class="card-body">
+<h4 class="card-title">Empower West City-Wide Book Read to Feature Author, Richard Rothstein</h4>
+
+<p class="card-text">Join us February 12th for the City-Wide Book Read featuring Richard Rothstein, author of The Color of Law. The Empower West Louisville City-Wide Book Read will be held Monday February 12 at 7 p.m. at Crescent Hill Baptist Church on Frankfort Avenue. To register find us on Eventbrite. Or for more information call Simmons College of Kentucky at 502 776-1443.</p>
+</div>
+<a class="btn btn-primary" href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2">Register Now</a>
+
+<div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+</div>
+<!-- News Story--><!-- 
+<div class="card" id="NewsStory3"><img class="card-img-top" src="img/West_Lou_Forum.jpg" alt="Card image cap"> --><!-- <iframe allow="autoplay; encrypted-media" allowfullscreen="" class="video-cap" frameborder="0" src="https://www.youtube.com/embed/PjfsA5ibrN4?rel=0&amp;showinfo=0"></iframe> --><!-- 
+<div class="card-body">
+<h4 class="card-title">West Louisville Forum Addresses Confederate Monuments</h4>
+
+<p class="card-text">Simmons College of Kentucky Present the next West Louisville Forum, Wed, Feb. 7, 12N with Karen L. Cox, Author, TOPIC &quot;The Confederate Monument Mess: How the Confederates Won the Cultural War in America&quot; Free and open to the public! REGISTER at Eventbrite.com</p>
+</div>
+<a class="btn btn-primary" href="https://www.eventbrite.com/e/the-confederate-monument-messhow-the-confederates-won-the-cultural-war-in-america-tickets-42056870231?aff=erelpanelorg">Register Now</a>
+
+<div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+</div> --><!-- News Story-->
+
+<div class="card" id="NewsStory5"><iframe allow="autoplay; encrypted-media" allowfullscreen="" class="video-cap" frameborder="0" src="https://www.youtube.com/embed/rEp2Mf-ZDU4?rel=0&amp;showinfo=0"></iframe>
+
+<div class="card-body">
+<h4 class="card-title">Angela Project Conference 2017 Recap</h4>
+
+<p class="card-text">Baptists from the Cooperative Baptist Fellowship, National Baptist Convention of America International, Inc., and the Progressive National Baptist Convention convened in Louisville, Ky., for a historic gathering focused on racial justice and education hosted by Simmons College of Kentucky @ the Annual Session of the NBCA, Intl. Inc.</p>
+</div>
+
+<div class="card-footer"><small class="text-muted"><a class="toplink" href="#">Back to top</a> </small></div>
+</div>
+</div>
+</section>
+<!-- <Section "Contact"> --><!-- Contact Form--><!-- <section class="contact_form card-deck" id="contact">
       <title class="signup_title">Empower West Louisville</title>
       <link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
       <form class="signup_form" action="#" method="post">
@@ -386,14 +327,5 @@
       </form>
     </section> -->
   </main>
-
-
-  <!--JavaScript for Hamburger Nav and Contact Form-->
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js " type="text/javascript " charset="utf-8 "></script>
-  <script src="./js/app.js " type="text/javascript " charset="utf-8 "></script>
-  <script src="https://code.jquery.com/jquery.min.js "></script>
-  <script src="./js/index.js "></script>
-
-</body>
-
+<!--JavaScript for Hamburger Nav and Contact Form--><script src="https://code.jquery.com/jquery-1.11.0.min.js " type="text/javascript " charset="utf-8 "></script><script src="./js/app.js " type="text/javascript " charset="utf-8 "></script><script src="https://code.jquery.com/jquery.min.js "></script><script src="./js/index.js "></script></body>
 </html>
