@@ -10,6 +10,7 @@
   <!--    Bootstrap: compiled and minified CSS from Bootstrap-->
   <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     rel="stylesheet" />
+
   <!--    Bootstrap: compiled and minified JavaScript from Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -22,6 +23,7 @@
   <link href="style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
   <!-- Favicon -->
   <link href="/img/EW.ico" rel="shortcut icon" type="image/x-icon" />
   <link href="/img/EW.ico" rel="icon" type="image/x-icon" />
@@ -38,15 +40,17 @@
 
     <!--   Logo image Graphic-->
     <img class="top_logo" src="img/EWLlogo.jpg" />
+    
+    <!-- Nav Menu Items-->
     <ul class="open desktop">
       <li>
-        <a href="#about">About us</a>
+          <a href="#about">About us</a>
       </li>
       <li>
-        <a href="#LearnMore">News</a>
+          <a href="#LearnMore">News</a>
       </li>
       <li>
-        <a href="mailto:admin@empowerwest.com">Contact</a>
+          <a href="mailto:admin@empowerwest.com">Contact</a>
       </li>
       <!-- <li>
           <a href="#FbTop">Social</a>
@@ -57,7 +61,7 @@
     </ul>
   </nav>
 
-  <!--    Site Header (backup should carousel fail
+  <!--    Site Header (backup for carousel)
    <div id="top" class="main-header">
     <span class="title">Empower West Louisville</span>
   </div> -->
@@ -73,33 +77,39 @@
         <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
         <li data-slide-to="3" data-target="#carouselExampleIndicators"></li>
       </ol>
-
+      <!-- Inner Carousel -->
       <div class="carousel-inner">
+        
         <div class="carousel-item active">
-          <a href=#>
-            <img alt="West Louisville Forum" class="d-block w-100" src="img/WLF3-7-18.jpg" />
-          </a>
-
-          <div class="carousel-caption d-none d-md-block"></div>
+            <a href="#">
+              <img alt="EmpowerWest" class="d-block w-100" src="img/L&NBldgSkyBkgSliderV5.jpg"/>
+            </a>
+              <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        
+        <div class="carousel-item">
+            <a href="#">
+              <img alt="EmpowerWest" class="d-block w-100" src="img/L&NBldgSkyBkgSliderV5.jpg"/>
+            </a>
         </div>
 
         <div class="carousel-item">
-          <a href="#">
-            <img alt="EmpowerWest" class="d-block w-100" src="img/L&NBldgSkyBkgSliderV5.jpg" />
-          </a>
+            <a href="#">
+              <img alt="EmpowerWest" class="d-block w-100" src="img/L&NBldgSkyBkgSliderV5.jpg"/>
+            </a>
         </div>
+      </div>
 
-        <!-- <div class="carousel-item"><a href=#><img alt="City Wide Book Read Photo Gallery" class="d-block w-100" src="./img/ColorOfLawSlider.jpg" /></a></div> -->
-        <!-- <div class="carousel-item"><a href="#NewsStory2"><img alt="February West Louisille Forum" class="d-block w-100" src="./img/Feb18WLF.jpg" /></a></div> --></div>
-      <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     <!--    This Section includes Bootstrap Cards Containing Organization Information-->
-
     <section class="about-cards">
       <div class="card-deck">
         <!--    "About" Card-->
@@ -109,12 +119,12 @@
 
             <p class="card-text">EmpowerWest is a coalition of Louisville area pastors and churches seeking to unleash the educational, economic,
               and spiritual power of West Louisville residents so that they might maximize their God-given potential and
-              capacity.</p>
+              capacity.
+            </p>
           </div>
         </div>
 
         <!--   "Mission" Card including Undordered List-->
-
         <div class="card col-sm" id="mission">
           <div class="card-block">
             <h4 class="card-title">Our Mission</h4>
@@ -122,12 +132,13 @@
             <h6 class="card-subtitle">Empower West will</h6>
 
             <p class="quote">Lift a prophetic voice that advocates with and amplifies the voices of those in West Louisville in places of
-              power.</p>
+              power.
+            </p>
             <button class="btn btn-primary" data-target="#missionModal" data-toggle="modal" type="button">Read More</button>
           </div>
         </div>
-        <!--    Modal -->
 
+        <!--    Modal -->
         <div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="missionModal" role="dialog" tabindex="-1">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -147,7 +158,8 @@
                   <li class="list-group-item">Find ways to increase economic and educational opportunity for residents of West Louisville.</li>
                   <li class="list-group-item">Build bridges of reconciliation between our churches and among our members.</li>
                   <li class="list-group-item">Continually educate ourselves and others as to how to bring our hearts to this in a long-term productive
-                    way.</li>
+                    way.
+                  </li>
                 </ol>
               </div>
 
@@ -157,8 +169,8 @@
             </div>
           </div>
         </div>
+        
         <!--    "Mindset" Card -->
-
         <div class="card col-sm" id="mindset">
           <div class="card-block">
             <h4 class="card-title">Mindset</h4>
@@ -168,11 +180,11 @@
               by potential business decisions.</p>
           </div>
         </div>
+
         <!--    Force column break-->
-
         <div class="w-100"></div>
-        <!--    "Makeup" Card -->
 
+        <!--    "Makeup" Card -->
         <div class="card col-sm" id="makeup">
           <div class="card-block">
             <h4 class="card-title">Makeup</h4>
@@ -182,8 +194,8 @@
               current residents and secondarily for the profit-making of investors.</p>
           </div>
         </div>
-        <!--    "Partners" Card-->
 
+        <!--    "Partners" Card-->
         <div class="card col-sm" id="partners">
           <div class="card-block">
             <h4 class="card-title">Our Partners</h4>
@@ -192,8 +204,8 @@
             <button class="btn btn-primary" data-target="#partnerModal" data-toggle="modal" type="button">Read More</button>
           </div>
         </div>
+        
         <!--  Modal -->
-
         <div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="partnerModal" role="dialog" tabindex="-1">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -238,55 +250,28 @@
         </div>
       </div>
     </section>
-    <!--Goto Facebook-->
-    <!-- 
-  <section id="FbTop">
-        <div class="GotoFb">
-            <h1 class="display-3">In the News</h1>
-            <h4 id="FbSubtitle" class="card-subtitle">For all the latest, check us out on Facebook</h4>
-
-            <button id="GotoFb" class="btn btn-primary">
-              <a class="FbLogo" href="https://www.facebook.com/empowerwestlouisville/"><i class="fab fa-facebook-square fa-2x"></i></a>
-              <a class="FbLink" href="https://www.facebook.com/empowerwestlouisville/" role="button"/a>Empower West Louisville</a>
-            </button>
-        </div>
-    </section> -->
-    <!--Slider Focus-->
-    <!--Slider Image1 Focus-->
-    <!-- <section id= "EventSection">
-      <div class="Events">
-        <a href="#EventSection"><img id="Slider1Focus" src="./img/EducationIsKingv5.jpg"></a>
-      </div>
-    </section>  -->
-    <!--Slider Image2 Focus-->
-    <!-- <section >
-      <div class="Events" id="Slider2Focus">
-        
-      </div>
-    </section>  -->
-    <!--Slider Image3 Focus-->
-    <!-- <section >
-      <div class="Events">
-        <a href="https://www.eventbrite.com/e/empowerwest-citywide-book-read-during-black-history-month-tickets-36408049456?aff=eac2"><img id="Slider3Focus" src="./img/ColorOfLawSlider.jpg"></a>
-      </div>
-    </section>  -->
-    <!--Slider Image4 Focus-->
-    <!-- <section >
-        <div class="Events">
-            <a href="https://www.eventbrite.com/e/the-confederate-monument-messhow-the-confederates-won-the-cultural-war-in-america-tickets-42056870231?aff=erelpanelorg"><img id="Slider4Focus" src="./img/Feb18WLF.jpg"></a>
-          </div>
-    </section>  -->
-    <!--Slider Image5 Focus-->
-    <!-- <section >
-      <div class="Events" id="Slider5Focus">
-        
-      </div>
-    </section>  -->
-    <!-- Card Section "News" -->
-
+    
     <section class="news_section" id="LearnMore">
       <div class="card-deck">
 
+        <!-- News Story-->
+        <div class="card" id="NewsStoryA">
+            <a href="https://www.courier-journal.com/story/opinion/contributors/2018/03/08/fight-racial-discrimination-west-louisville-empowerwest-column/399129002/">
+              <img class="card-img-top" src="https://www.gannett-cdn.com/-mm-/1674e8071cfd3672433f06906186956085173c1e/c=1-0-1022-768&r=x404&c=534x401/local/-/media/2018/03/07/Louisville/Louisville/636560230056491775-LCJBrd2-08-14-2017-KY-1-A008-2017-08-13-IMG-636382334316629817-u-1-1-UJJ9Q4P2-L1079843904-IMG-636382334316629817-u-1-1-UJJ9Q4P2.jpg">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">EmpowerWest: Mayor Fischer, here's how Louisville can begin to repair the damage of racism</h4>
+  
+              <p class="card-text">EmpowerWest clergy coalition calls on Mayor Greg Fischer to help with racial restoration and reconciliation through a new commission.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <a class="toplink" href="#">Back to top</a>
+              </small>
+            </div>
+          </div>
+        
         <!-- News Story-->
         <div class="card" id="NewsStory1">
           <a href="https://www.eventbrite.com/e/the-burden-a-look-at-the-continued-impact-of-black-enslavement-in-america-today-tickets-43308805804?aff=es2">
@@ -295,12 +280,11 @@
           <div class="card-body">
             <h4 class="card-title">West Louisville Forum Examines Impact of Black Enslavement in America Today</h4>
 
-            <p class="card-text">Simmons College of Kentucky @SCKY_1879 presents the next West Louisville Forum, Wed, March 7, 12:00pm. Guest
-              Speaker: Rochelle Riley, Author, Topic “The Burden: A Look at the Continued Impact of Black Enslavement in
-              America Today!” Register Eventbrite.com @KWCosby @ssclive.
+            <p class="card-text">Simmons College of Kentucky @SCKY_1879 West Louisville Forum, March 2018. The Guest
+              Speaker was Rochelle Riley, Author, Topic “The Burden: A Look at the Continued Impact of Black Enslavement in
+              America Today!” @KWCosby @ssclive.
             </p>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.com/e/the-burden-a-look-at-the-continued-impact-of-black-enslavement-in-america-today-tickets-43308805804?aff=es2">Register Now</a>
           <div class="card-footer">
             <small class="text-muted">
               <a class="toplink" href="#">Back to top</a>
@@ -327,6 +311,9 @@
           </div>
         </div>
 
+        <!--    Force column break-->
+        <div class="w-100"></div>
+
         <!-- News Story-->
         <div class="card" id="NewsStory2">
           <a href="http://www.wdrb.com/story/37488576/religious-leaders-launch-initiative-at-simmons-college-promoting-racial-justice-and-leadership#.WoULj1U-rhV.link">
@@ -346,9 +333,6 @@
             </small>
           </div>
         </div>
-
-        <!--    Force column break-->
-        <div class="w-100"></div>
 
         <!-- News Story-->
         <div class="card" id="NewsStory3">
@@ -392,6 +376,8 @@
           </div>
         </div>
 
+      <!--    Force column break-->
+      <div class="w-100"></div>
         <!-- News Story-->
 
         <div class="card" id="NewsStory5">
@@ -413,10 +399,6 @@
             </small>
           </div>
         </div>
-
-        <!--    Force column break-->
-        <div class="w-100"></div>
-
 
         <!-- News Story-->
         <!-- 
@@ -443,7 +425,8 @@
             <p class="card-text">Baptists from the Cooperative Baptist Fellowship, National Baptist Convention of America International, Inc.,
               and the Progressive National Baptist Convention convened in Louisville, Ky., for a historic gathering focused
               on racial justice and education hosted by Simmons College of Kentucky @ the Annual Session of the NBCA, Intl.
-              Inc.</p>
+              Inc.
+            </p>
           </div>
 
           <div class="card-footer">
@@ -492,7 +475,7 @@
   <script src="https://code.jquery.com/jquery-1.11.0.min.js " type="text/javascript " charset="utf-8 "></script>
   <script src="./js/app.js " type="text/javascript " charset="utf-8 "></script>
   <script src="https://code.jquery.com/jquery.min.js "></script>
-  <script src="./js/index.js "></script>
+  <script src="index.js "></script>
 </body>
 
 </html>
