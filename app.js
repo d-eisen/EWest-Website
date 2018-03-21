@@ -13,7 +13,7 @@ const users = require('./routes/users');
 mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
 
 // Import all models
-require('./models/file.model.js');
+require('./models/index.js');
 
 const app = express();
 

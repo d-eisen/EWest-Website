@@ -1,5 +1,5 @@
 [
-    {"name":"Phil Fishman", "email": "carp@fishmail.net", "email": "carp@fishmail.net" },
-    {"name":"Kevin Pony", "email": "shorthorse@saddles.com", "email": "shorthorse@saddles.com" },
-    {"name":"Sandra Scientist", "email": "dev@bigdata.com", "email": "dev@bigdata.com" }
+    {"name":"Phil Fishman", "email": "carp@fishmail.net", "confirmeEmail": "carp@fishmail.net" },
+    {"name":"Kevin Pony", "email": "shorthorse@saddles.com", "confirmEmail": "shorthorse@saddles.com" },
+    {"name":"Sandra Scientist", "email": "dev@bigdata.com", "confirmEmail": "dev@bigdata.com" }
   ]
