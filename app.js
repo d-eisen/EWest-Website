@@ -4,11 +4,20 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
 
+// Connect MongoDB
+mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
+
+// Import all models
+require('./models/file.model.js');
+
 const app = express();
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
