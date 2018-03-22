@@ -14,13 +14,9 @@ const config = require('./src/config');
 mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
 
 // Import all models
-require('./src/models/file.model.js');
-
-
+const models = require('./src/models/file.model.js');
 
 const app = express();
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

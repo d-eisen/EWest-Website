@@ -15,7 +15,7 @@ const FileSchema = new mongoose.Schema({
     unique: true,
   },
 
-  confirmemail: {
+  confirmEmail: {
     type: String,
     required: true,
     trim: true,
