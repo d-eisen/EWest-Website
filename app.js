@@ -6,14 +6,16 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+// Require Routes and Configs
 const index = require('./routes/index');
-const users = require('./routes/users');
+const config = require('./src/config');
 
 // Connect MongoDB
 mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
 
 // Import all models
-require('./models/index.js');
+require('./src/models/index.js');
+
 
 const app = express();
 
@@ -23,6 +25,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// Call dependencies
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());

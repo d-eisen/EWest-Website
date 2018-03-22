@@ -1,28 +1,33 @@
-// Contact form input
+// 
+// * * * This is a file.model.js backup * * *
+//
+// // Load mongoose package
+// const mongoose = require('mongoose');
 
-const mongoose = require('mongoose');
+// const FileSchema = new mongoose.Schema({
+//   title: String,
+//   description: String,
+//   created_at: { type: Date, default: Date.now },
+//   deleted: {type: Boolean, default: false},
+// });
 
-let UserSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    trim: true,
-  },
+// const File = mongoose.model('File', FileSchema);
 
-  email: {
-    type: String,
-    required: true,
-    trim: true,
-    unique: true,
-  },
+// File.count({}, function(err, count) {
+//   if (err) {
+//     throw err;
+//   }
+  
+//   if (count > 0) return ;
 
-  confirmemail: {
-    type: String,
-    required: true,
-    trim: true,
-    unique: true,
-  },
-});
+//   const files = require('./file.seed.json');
+//   File.create(files, function(err, newFiles) {
+//     if (err) {
+//       throw err;
+//     }
+//     console.log("DB seeded")
+//   });
 
-const User = mongoose.model('User', UserSchema);
-module.exports = User;
+// });
+
+// module.exports = File;

@@ -11,6 +11,11 @@ router.get('/confirm', function(req, res, next) {
   return res.render('confirm', { title: 'Confirmation' });
 });
 
+/* GET users listing. */
+router.get('/users', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
 // POST / Sign up form
 router.post('/index', function(req, res, next) {
   if (req.body.email &&
