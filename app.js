@@ -14,13 +14,17 @@ const config = require('./src/config');
 mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
 
 // Import all models
-const models = require('./src/models/file.model.js');
+require('/src/models/file.model.js');
 
 const app = express();
+const publicPath = path.resolve(__dirname, '../public');
+app.use(bodyParser.json());
+app.use(express.static(publicPath));
+app.use('/api', router);
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// // view engine setup
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'pug');
 
 // Call dependencies
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
