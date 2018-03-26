@@ -6,39 +6,32 @@
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <!-- <script src="main.js"></script> -->
+    <script src="app.js"></script>
   </head>
   <body>
-    <!-- Contact Form-->
-    <section class="contact_form card-deck" id="contact">
+    <!-- Sign Up Form-->
+
+    <section class= "contact_form card-deck" id="contact">
       <title class="signup_title">EmpowerWest Louisville</title>
-        <link rel="stylesheet" href='style.css' type="text/css" media="screen" title="no title" charset="utf-8">
-          <form class="signup_form" action="/post" method="post">
-            <div class="contact-title"> Sign Up
-            </div>
-            <p class="form-p">
-              <label class="sign-up label" for="username">First Name
-              </label>
-                <input id="username" name="First" type="text">
-            </p>
-            <p class="form-p">
-              <label class="sign-up label" for="username">Last Name
-              </label>
-                <input id="username" name="Last" type="text">
-            </p>
-            <p class="form-p">
-              <label for="email">Email Address
-              </label>
-                <input id="email" name="email" type="email">
-            </p>
-            <p class=" form-p ">
-              <label for="confirm_email ">Confirm Your Email</label>
-                <input id="confirm_email " name="confirm_email" type="email">
-            </p>
-            <p>
-              <input type="submit" value="SUBMIT" id="submit ">
-            </p>
-          </form>
+        <link rel="stylesheet" href='style.css' type="text/css" media="screen" title="Sign Up" charset="utf-8">
+
+        <form method="POST" action="/">
+          <div class="form-group">
+            <label for="name">Name:</label>
+              <input class="form-control" id="name" type="text" placeholder="first and last" name="name"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" id="email" type="email" placeholder="name@email.com" name="email"/>
+          </div>
+          <div class="form-group">
+            <label for="confirmEmail">Confirm Email:</label>
+            <input class="form-control" id="confirmEmail" type="email" placeholder="confirm email" name="confirmEmail"/>
+          </div>
+          <button class="btn btn-primary" type="submit">Sign up</button>
+        </form>
     </section>  
   </body>
 </html>
+
+
