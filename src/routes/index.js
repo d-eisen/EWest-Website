@@ -35,9 +35,9 @@ router.put('/file/:fileId', function(req, res, next) {
         return res.status(404).json({message: "File not found"});
       }
   
-      name: req.body.name,
-      email: req.body.email,
-      confirmEmail: req.body.confirmEmail
+      file.name: req.body.name,
+      file.email: req.body.email,
+      file.confirmEmail: req.body.confirmEmail
   
       file.save(function(err, savedFile) {
         if (err) {
