@@ -6,11 +6,12 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "handlebars": "^4.0.11",
     "mongoose": "^5.0.11",
     "nodemon": "^1.17.2"
   },
   "devDependencies": {},
-    "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js"
   },
@@ -23,5 +24,5 @@
   "bugs": {
     "url": "https://github.com/d-eisen/EWest-Website/issues"
   },
-  "homepage": "https://github.com/d-eisen/EWest-Website#readme"  
+  "homepage": "https://github.com/d-eisen/EWest-Website#readme"
 }
