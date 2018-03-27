@@ -1,13 +1,12 @@
 // Load packages
+const path = require('path');
+const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('./config');
-const express = require('express');
-const handlebars = require('handlebars');
-const mongoose = require('mongoose');
-const path = require('path');
-
-
 const router = require('./routes');
+
+// Load mongoose package
+const mongoose = require('mongoose');
 
 // Connect to MongoDB and load database
 mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.password}@${config.db.host}/${config.db.dbName}`);
