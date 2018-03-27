@@ -1,3 +1,4 @@
+
 function getFiles() {
     return $.ajax('/api/file')
       .then(res => {
@@ -12,7 +13,7 @@ function getFiles() {
   
   function refreshFileList() {
     const template = $('#list-template').html();
-    let compiledTemplate = Handlebars.compile(template);
+    const compiledTemplate = Handlebars.compile(template);
   
     getFiles()
       .then(files => {
