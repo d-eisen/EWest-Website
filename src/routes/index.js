@@ -35,9 +35,10 @@ router.put('/file/:fileId', function(req, res, next) {
         return res.status(404).json({message: "File not found"});
       }
   
-      file.name: req.body.name,
-      file.email: req.body.email,
-      file.confirmEmail: req.body.confirmEmail
+      file.name = req.body.name;
+      file.email = req.body.email;
+      file.confirmEmail = req.body.confirmEmail;
+      file.zipCode = req.body.zipCode;
   
       file.save(function(err, savedFile) {
         if (err) {
@@ -51,7 +52,7 @@ router.put('/file/:fileId', function(req, res, next) {
   
   });
 
-//DELETE
+//DELETE files
 router.delete('/file/:fileId', function(req, res, next) {
   const File = mongoose.model('File');
   const fileId = req.params.fileId;

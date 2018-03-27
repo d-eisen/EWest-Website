@@ -135,7 +135,7 @@ function getFiles() {
         refreshFileList();
       })
       .fail(function(error) {
-        console.log("Error, file not deleted.", error);
+        console.log("Error, file not deleted", error);
       })
   }
   
