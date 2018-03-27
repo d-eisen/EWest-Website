@@ -52,6 +52,27 @@ router.put('/file/:fileId', function(req, res, next) {
   });
 
 //DELETE
+router.delete('/file/:fileId', function(req, res, next) {
+  const File = mongoose.model('File');
+  const fileId = req.params.fileId;
+
+  File.findById(fileId, function(err, file) {
+    if (err) {
+      console.log(err);
+      return res.status(500).json(err);
+    }
+    if (!file) {
+      return res.status(404).json({message: "File not found"});
+    }
+
+    file.deleted = true;
+
+    file.save(function(err, deletedFile) {
+      res.json(deletedFile);
+    })
+
+  })
+});
 
 
 // LIST all users in the database

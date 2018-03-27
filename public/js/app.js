@@ -27,7 +27,7 @@ function getFiles() {
   }
   
   function handleAddFileClick() {
-    console.log("Baby steps...");
+    console.log("Adding file");
     setFormData({});
     toggleAddFileFormVisibility();
   }

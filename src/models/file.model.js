@@ -36,7 +36,7 @@ const FileSchema = new mongoose.Schema({
       if (err) {
         throw err;
       }
-      console.log("DB seeded")
+      console.log("Database seeded")
     });
   
   });
