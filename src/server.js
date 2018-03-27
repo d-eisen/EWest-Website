@@ -4,7 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('./config');
 const router = require('./routes');
-const handlebars = require('handlebars');
+// const handlebars = require('handlebars');
+const jquery = require('jquery')
 
 // Load mongoose package
 const mongoose = require('mongoose');
@@ -14,6 +15,7 @@ mongoose.connection.openUri(`mongodb://${config.db.username}:${config.db.passwor
 
 // Import all models
 require('./models/file.model.js');
+require('handlebars');
 
 const app = express();
 const publicPath = path.resolve(__dirname, '../public');
