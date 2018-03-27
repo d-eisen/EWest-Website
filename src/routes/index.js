@@ -1,18 +1,7 @@
-// src/routes/index.js
+
 const router = require('express').Router();
 const mongoose = require('mongoose');
 
-// Totally fake data
-const FILES = [
-  {id: 'a', title: 'cutecat1.jpg', description: 'A cute cat'},
-  {id: 'b', title: 'uglycat1.jpg', description: 'Just kidding, all cats are cute'},
-  {id: 'c', title: 'total_recall_poster.jpg', description: 'Quaid, start the reactor...'},
-  {id: 'd', title: 'louisville_coffee.txt', description: 'Coffee shop ratings'},
-];
-
-router.use('/doc', function(req, res, next) {
-  res.end(`Documentation http://expressjs.com/`);
-});
 
 // LIST all users in the database
 router.get('/file', function(req, res, next) {
@@ -28,9 +17,7 @@ router.get('/file', function(req, res, next) {
 	});
 });
 
-/**
- * Get a single file by passing its id as a URL param
- */
+//Get a single file by passing its id as a URL param/
 router.get('/file/:fileId', function(req, res, next) {
   const {fileId} = req.params;
   // same as 'const fileId = req.params.fileId'
