@@ -8,42 +8,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
-
 </head>
-
 <body>
-  <!-- Sign Up Form-->
-  <section class="signup_form" id="contact">
-    <title class="signup_title">EmpowerWest Louisville</title>
+<!-- Guestbook-->
+<!-- <section class="signup_form" id="contact"> -->
+<!-- <title class="signup_title">EmpowerWest Louisville</title> -->
+    <div class="container"></div>
+      <h1>Guestbook</h1>
 
+        <div id="list-container"></div>
+        
+        <div class="form-group">
+            <!-- <form method="POST" action="/file">       -->
+          <input type="hidden" id="file-id" value="" />
+            <label for="name">Name:</label>
+            <input class="form-control" id="file-name" type="text" placeholder="first and last" name="name" />
+          </div>
+          <div class="form-group">
+            <label class='sign-up label' for="email">Email:</label>
+            <input class="form-control" id="file-email" type="email" placeholder="name@email.com" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="confirmEmail">Confirm Email:</label>
+            <input class="form-control" id="file-confirmEmail" type="email" placeholder="confirm email" name="confirmEmail" />
+          </div>
+          <div class="form-group">
+            <label for="zipCode">Zip Code (Five Digit):</label>
+            <input class="form-control" id="file-zipCode" type="zip" pattern="[0-9]{5}" placeholder="#####" name="zipCode" />
+          </div>
 
-    <!-- <form method="POST" action="/file"> -->
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input class="form-control" id="name" type="text" placeholder="first and last" name="name" />
-      </div>
-      <div class="form-group">
-        <label class='sign-up label' for="email">Email:</label>
-        <input class="form-control" id="email" type="email" placeholder="name@email.com" name="email" />
-      </div>
-      <div class="form-group">
-        <label for="confirmEmail">Confirm Email:</label>
-        <input class="form-control" id="confirmEmail" type="email" placeholder="confirm email" name="confirmEmail" />
-      </div>
-      <div class="form-group">
-        <label for="zipCode">Zip Code (Five Digit):</label>
-        <input class="form-control" id="zipCode" type="zip" pattern="[0-9]{5}" placeholder="#####" name="zipCode" />
-      </div>
-
-      <button class="btn btn-primary" type="button" onclick="submitFileForm()">Submit</button>
-    </form>
-  </section>
-  <!-- <div> -->
-  <!-- <a class="btn btn-primary" href="./users.html" role="button">View Guest Book</a> -->
-  <!-- </div> -->
+          <button class="btn btn-primary" type="button" onclick="submitFileForm()">Submit</button>
+        </form>
+      </section>
+      <!-- <div> -->
+      <!-- <a class="btn btn-primary" href="./users.html" role="button">View Guest Book</a> -->
+      <!-- </div> -->
 
   <div class="container">
-    <h1>User Signups</h1>
+    
   </div>
   <script id="list-template" type="text/x-handlebars-template">
     <ul class="list-group">
