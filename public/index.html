@@ -18,60 +18,58 @@
 
         <div id="list-container"></div>
         
+        <div id="form-container">
         <div class="form-group">
+          <form>
             <!-- <form method="POST" action="/file">       -->
-          <input type="hidden" id="file-id" value="" />
-            <label for="name">Name:</label>
-            <input class="form-control" id="file-name" type="text" placeholder="first and last" name="name" />
-          </div>
-          <div class="form-group">
-            <label class='sign-up label' for="email">Email:</label>
-            <input class="form-control" id="file-email" type="email" placeholder="name@email.com" name="email" />
-          </div>
-          <div class="form-group">
-            <label for="confirmEmail">Confirm Email:</label>
-            <input class="form-control" id="file-confirmEmail" type="email" placeholder="confirm email" name="confirmEmail" />
-          </div>
-          <div class="form-group">
-            <label for="zipCode">Zip Code (Five Digit):</label>
-            <input class="form-control" id="file-zipCode" type="zip" pattern="[0-9]{5}" placeholder="#####" name="zipCode" />
-          </div>
+            <!-- <input type="hidden" id="file-id" value="" /> -->
+              <label for="file-name">Name:</label>
+              <input class="form-control" id="file-name" type="text" placeholder="first and last" name="name" />
+            </div>
+            <div class="form-group">
+              <label class='sign-up label' for="file-email">Email:</label>
+              <input class="form-control" id="file-email" type="email" placeholder="name@email.com" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="file-confirmEmail">Confirm Email:</label>
+              <input class="form-control" id="file-confirmEmail" type="email" placeholder="confirm email" name="confirmEmail" />
+            </div>
+            <div class="form-group">
+              <label for="zipCode">Zip Code (Five Digit):</label>
+              <input class="form-control" id="file-zipCode" type="zip" pattern="[0-9]{5}" placeholder="#####" name="zipCode" />
+            </div>
 
-          <button class="btn btn-primary" type="button" onclick="submitFileForm()">Submit</button>
-        </form>
-      </section>
+            <button class="btn btn-primary" type="button" onclick="submitFileForm()">Submit</button>
+          </form>
+        </div>
       <!-- <div> -->
       <!-- <a class="btn btn-primary" href="./users.html" role="button">View Guest Book</a> -->
       <!-- </div> -->
 
-  <div class="container">
-    
-  </div>
-  <script id="list-template" type="text/x-handlebars-template">
-    <ul class="list-group">
-      {{#each files}}
-      <li class="list-group-item">
-        <strong>{{name}}</strong> - {{email}}
-        <span class="pull-right">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary" onclick="handleEditFileClick('{{_id}}')">Edit</button>
-            <button type="button" class="btn btn-secondary" onclick="handleDeleteFileClick('{{_id}}')">Delete</button>
-            <button type="button" class="btn btn-secondary" onclick="handleShowMapClick('{{_id}}')">Map</button>
-          </div>
-        </span>
-      </li>
-      {{/each}}
-    </ul>
-  </script>
+      <script id="list-template" type="text/x-handlebars-template">
+        <ul class="list-group">
+          {{#each files}}
+          <li class="list-group-item">
+            <strong>{{name}}</strong> - {{email}}
+            <span class="pull-right">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" onclick="handleEditFileClick('{{_id}}')">Edit</button>
+                <button type="button" class="btn btn-secondary" onclick="handleDeleteFileClick('{{_id}}')">Delete</button>
+                <button type="button" class="btn btn-secondary" onclick="handleShowMapClick('{{_id}}')">Map</button>
+              </div>
+            </span>
+          </li>
+          {{/each}}
+        </ul>
+      </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
-  <script src="./js/app.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
