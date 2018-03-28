@@ -40,9 +40,10 @@ function getFiles() {
     console.log("Sign Up button clicked.");
   
     const fileData = {
-      title: $('#file-name').val(),
-      description: $('#file-email').val(),
-      description: $('#file-zip').val(),
+      name: $('#file-name').val(),
+      email: $('#file-email').val(),
+      confirmEmail: $('#file-confirmEmail').val(),
+      zipCode: $('#file-zip').val(),
       _id: $('#file-id').val(),
     };
   
@@ -140,8 +141,7 @@ function getFiles() {
         console.log("Error, file not deleted", error);
       })
   }
-  
-  
+   
   refreshFileList();
   
 
