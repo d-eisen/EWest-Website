@@ -107,8 +107,6 @@ router.delete('/file/:fileId', function(req, res, next) {
 });
 
 
-
-  
-  module.exports = router;
+module.exports = router;
 
   
