@@ -2,12 +2,14 @@
 <html lang='en'>
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Guest Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+    crossorigin="anonymous"> -->
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 <!-- Guestbook-->
@@ -17,15 +19,53 @@
       <h1>Guestbook</h1>
 
         <div id="list-container"></div>
+
+        <button id="add-file-button" class="btn btn-primary" onclick="handleAddFileClick()">Add File</button>
+        <div id="form-container" class="panel hidden">
+          <form id="add-file-form">
+            <input type="hidden" id="file-id" value="" />
+            <div class="form-group">
+              <label for="file-name">Name</label>
+              <input type="text" class="form-control" id="file-name" placeholder="Title">
+            </div>
+            <div class="form-group">
+              <label for="file-email">Email</label>
+              <input type="email" class="form-control" id="file-email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="file-confirmEmail">Confirm Email</label>
+              <input type="email" class="form-control" id="file-confirmEmail" placeholder="confirm email">
+            </div>
+            <div class="form-group">
+              <label for="file-zipCode">Zip Code</label>
+              <input type="text" class="form-control" id="file-zipCode" placeholder="Zip (five digit)">
+            </div>
+            <button type="button" onclick="submitFileForm()" class="btn btn-success">Submit</button>
+            <button type="button" onclick="cancelFileForm()" class="btn btn-link">cancel</button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
         
-        <div id="form-container">
+        <!-- <div id="form-container">
         <div class="form-group">
-          <form>
+           -->
+           <!-- **** remove these between the ** -->
             <!-- <form method="POST" action="/file">       -->
             <!-- <input type="hidden" id="file-id" value="" /> -->
-              <label for="file-name">Name:</label>
+            <!-- **** -->
+              <!-- <label for="file-name">Name:</label>
               <input class="form-control" id="file-name" type="text" placeholder="first and last" name="name" />
-            </div>
+        </div>
             <div class="form-group">
               <label class='sign-up label' for="file-email">Email:</label>
               <input class="form-control" id="file-email" type="email" placeholder="name@email.com" name="email" />
@@ -40,9 +80,9 @@
             </div>
 
             <button class="btn btn-primary" type="button" onclick="submitFileForm()">Submit</button>
-          </form>
+         
           </div>
-        </div>
+        </div> -->
 
       <script id="list-template" type="text/x-handlebars-template">
         <ul class="list-group">
