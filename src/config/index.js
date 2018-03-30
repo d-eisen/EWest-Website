@@ -1,3 +1,4 @@
+// Database Configuration
 module.exports = {
     appName: 'Empower West Contact Module',
     port: 3030,

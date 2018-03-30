@@ -31,7 +31,6 @@ router.get('/file/:fileId', function(req, res, next) {
 });
 
 
-// CRUDL Routes
 // CREATE new file
 router.post('/file', function(req, res, next) {
     const File = mongoose.model('File');
