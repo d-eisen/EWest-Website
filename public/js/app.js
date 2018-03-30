@@ -43,7 +43,7 @@ function getFiles() {
       name: $('#file-name').val(),
       email: $('#file-email').val(),
       confirmEmail: $('#file-confirmEmail').val(),
-      zipCode: $('#file-zip').val(),
+      zipCode: $('#file-zipCode').val(),
       _id: $('#file-id').val(),
     };
   
@@ -141,6 +141,11 @@ function getFiles() {
         console.log("Error, file not deleted", error);
       })
   }
+
+  function handleShowMapClick() {
+(confirm("Look for mapping feature in version 2."));
+  }
+  
    
 refreshFileList();
   

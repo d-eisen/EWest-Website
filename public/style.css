@@ -512,7 +512,9 @@ Contact Form
 ========================================================================== 
 */
 .contact-title {
-  font-family: "PhillySans-Regular";
+  /* font-family: "PhillySans-Regular"; */
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 800;
   background-color: fff;
   font-size: 3em;
   margin-left: 0px;
