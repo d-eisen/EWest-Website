@@ -18,10 +18,10 @@ Point the terminal to the root directory and do the following:
 * Run ‘npm install’ to install necessary packages
 * Node modules are included in repository
 - Primary dependencies in rendering the site are:
-- - body-parser": "^1.18.2",
-- - "express": "^4.16.3",
-- - "handlebars": "^4.0.11",
-- - "mongoose": "^5.0.11",
+    -`body-parser`: ^1.18.2,
+    - `express`: ^4.16.3,
+    - `handlebars`: ^4.0.11,
+    - `mongoose`: ^5.0.11,
 * Mongo service is hosted by `MLab`. Installation of `Mongo` is unnecessary.
 * Run ‘npm start’ to intialize the server process
 * Open the browser and point to `localhost:3030`
