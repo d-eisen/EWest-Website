@@ -1,10 +1,10 @@
-#EmpowerWest Website: Guestbook Feature
+# EmpowerWest Website: Guestbook Feature
 This is an informational website for a local non-profit organization.
 The focus of the site is deliver content regarding the values of the organization, news stories and other media related the organization’s activities.
-##Software
+## Software
 This development iteration of the site includes a beta version of a contact database. The database utilizes the JavaScript MEAN stack.  The application is written in Node.js. The Express framework serves the Mongo database. UI is written in jQuery.
 The site includes a list feature showing all user registrations. These registrations are served by a back end database. Entries can be edited and deleted.
-##Using the Guestbook app
+## Using the Guestbook app
 Click `Guestbook` in the nav bar. The guestbook application served on the site includes an input form for collecting contact information from visitors. 
 *Once the server is initialized, the app calls a function to display a list of registered users inline on the site. 
 •	*`Add file` calls a input form where new records are created when submit is clicked
