@@ -510,8 +510,7 @@ News Section
       padding-top: 5px
       color: #fff;
       background-color: #33b779;
-      border-color: #33b7797a;
-  }
+      border-color: #33b7797a; }
 
 
 
@@ -749,4 +748,4 @@ input[type="submit"]:hover {
   background-color: rgba(89, 118, 129, 0.9);
   cursor: pointer;
 }
- */ */
+ */ 
